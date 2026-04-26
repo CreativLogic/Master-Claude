@@ -1,71 +1,105 @@
-# Claude Course — 28 Days to an AI Operating System
+# Claude Course — 28 Days, One Conversation
 
-One short video + one small action per day. After 28 days you have a working AI operating system that runs your work.
+This repo IS the course. You don't read it. You **talk to it.**
 
-This repo is the **interactive companion** to the course. Watch each day's video, then come here to do the work with Claude tutoring you the whole way.
+Paste this URL into Claude Code and ask it anything:
 
-## What's in here
-
-- **28 day folders** — each with the written lesson, the exact prompts, the resources, and a `CLAUDE.md` that turns Claude Code into your tutor for that day.
-- **An interactive `worksheet.html` per day** — open in your browser. Checklist, reflection prompts, save/export. Auto-saves to your browser so you can walk away and come back.
-- **A `PROGRESS.md`** — check off each day as you go.
-- **Scripts** — one command prints exactly where you are in the course and what to run next.
-- **Skills folder** — the actual slash-command skills from the course, ready to install.
-
-> **Videos live on YouTube / Skool.** They're too big for a git repo (4+ hours, 8GB). This repo is the work you do alongside them.
-
----
-
-## Before you start
-
-Watch the [START-HERE.md](START-HERE.md) file. It walks you through setting this repo up on your machine in 3 minutes.
-
-## 30-second version
-
-```bash
-git clone <this-repo>
-cd claude-course-github
-./scripts/where-am-i.sh     # prints your next day + the exact command to run
-cd days/day-01-welcome
-claude                       # Claude Code opens with today's tutor loaded
+```
+https://github.com/Samin12/claude-course
 ```
 
-That's it. You're in. Claude knows exactly what Day 1 is about and will walk you through it.
+Claude Code clones it, loads the tutor, and you start a conversation. That's the whole UX.
 
 ---
 
-## The 28-Day Plan
+## The 30-second start
 
-- **Week 1 (Days 1–6)** — Understand Claude, set up, run your first real project.
-- **Week 2 (Days 7–12)** — Put work on autopilot, scrape the web, meet Claude Code.
-- **Week 3 (Days 13–18)** — Build real pipelines, set up your second brain, talk to Claude from anywhere.
-- **Week 4 (Days 19–24)** — Step back, see your AI OS, build apps overnight with AI teams.
-- **Bonus Week (Days 25–28)** — Make AI ads, clone yourself on video, edit with plain English.
+Open Claude Code (terminal, desktop, or VS Code) and say:
 
-Full day-by-day index: [INDEX.md](INDEX.md).
+> Hey, can you clone https://github.com/Samin12/claude-course and walk me through it.
 
-## How this repo makes it interactive
+Claude pulls the repo, reads the [CLAUDE.md](CLAUDE.md) tutor file, and you can immediately ask things like:
 
-1. **Per-day Claude tutor** — every day folder has its own `CLAUDE.md`. When you `cd` into a day and run `claude`, Claude Code loads that file and becomes your tutor for that day. It knows the pain, the action, the steps, the prompts, and the common stuck points. Ask it anything — it won't spoil later days.
-2. **Per-day interactive worksheet** — every day has a `worksheet.html`. Open it in your browser to get a live checklist of the day's steps, reflection prompts, and a "save as markdown" button. Auto-saves to your browser so you can walk away. Export your filled-in worksheet straight to `artifact/` when you're done.
-3. **Progress tracking** — check off each day in `PROGRESS.md`. Commit it back to your own fork to see your journey.
-4. **Copy-paste prompts** — every prompt Samin uses on camera is in the day's `resources.md` as a code block. Copy, paste, go.
-5. **Artifact folders** — every day has an `artifact/` folder. That's where what you build lives. After 28 days you have a folder full of proof that you actually did the work.
-6. **Stuck-on-day issues** — use the GitHub issue templates to ask for help on a specific day. The community answers.
+- *"What day should I start on?"*
+- *"I'm on Day 6 — which skills do I need installed?"*
+- *"Use the Website Cloner skill on `awwwards.com/sites/dinosaur-museum`."*
+- *"Show me the prompts from Day 11."*
+- *"Run today's worksheet for me."*
+- *"I finished Day 4. Mark it done and tell me what's next."*
+
+No menus. No `cd`-ing through folders. Just talk to Claude.
 
 ---
 
-## Who this is for
+## What you can ask, by example
 
-- You've heard of Claude but mostly just chat with it.
-- You've heard of Claude Code but haven't built anything real with it.
-- You want to automate the boring parts of your job.
-- You'd rather DO than WATCH.
+### "Where am I?"
+Claude reads [PROGRESS.md](PROGRESS.md), figures out the first unchecked day, and tells you.
 
-If you only want to watch — that's fine, the videos stand alone. But the people who clone this repo and do the work are the ones who finish with a working AI OS.
+### "Which skills do I need for Day N?"
+Claude opens [ALL-RESOURCES.md](ALL-RESOURCES.md), finds your day, and lists every tool, connector, and skill — with direct links into [skills/](skills/).
+
+### "Can I have access to the [Website Cloner / E-com Ads / Reels Pipeline] skill?"
+Claude reads the skill's `SKILL.md` and either:
+- copies it into your `~/.claude/skills/` so it's installed locally, or
+- runs the skill right in the conversation if you want it to use it now.
+
+### "Use this skill on my product / site / video."
+Claude loads the skill instructions and executes against whatever you point it at. The skills in this repo are designed to be ran directly:
+
+| Ask Claude to… | Skill it'll use |
+|---|---|
+| Clone any website | [skills/clone-website/](skills/clone-website/) |
+| Make 4 e-com ad creatives | [skills/ecom-adds/](skills/ecom-adds/) |
+| Produce an Instagram reel | [skills/ai-reels-pipeline/](skills/ai-reels-pipeline/) |
+| Render with Remotion correctly | [skills/remotion-best-practices/](skills/remotion-best-practices/) |
+| Push course content to Skool | [skills/skool-cli/](skills/skool-cli/) |
+| Write copy in a real voice | [skills/ralph-wiggum-marketer/](skills/ralph-wiggum-marketer/) |
+
+### "I'm stuck on Day 12."
+Claude pulls up that day's `lesson.md`, walks the steps, and stays scoped — it won't spoil later days unless you ask.
+
+### "Mark Day 4 done."
+Claude updates [PROGRESS.md](PROGRESS.md) and tells you exactly what's coming on Day 5.
+
+---
+
+## The 28-day arc
+
+- **Week 1 (Days 1–6)** — Understand Claude. Set up. Run your first real project.
+- **Week 2 (Days 7–12)** — Put work on autopilot. Scrape the web. Meet Claude Code.
+- **Week 3 (Days 13–18)** — Real pipelines. Second brain. Talk to Claude from your phone.
+- **Week 4 (Days 19–24)** — Step back. You have an AI OS. Build apps overnight.
+- **Bonus (Days 25–28)** — AI ads. Video clone. Edit with plain English.
+
+Full day-by-day map: [INDEX.md](INDEX.md). Every tool, link, and skill in one list: [ALL-RESOURCES.md](ALL-RESOURCES.md).
+
+---
+
+## What's actually in the repo
+
+- **[days/](days/)** — 28 day folders. Each has a `CLAUDE.md` tutor, a `lesson.md`, a `resources.md`, a `worksheet.html`, and an `artifact/` folder for what you build.
+- **[skills/](skills/)** — the actual slash-command skills from the course. Ready to install or run from inside Claude Code.
+- **[CLAUDE.md](CLAUDE.md)** — the root tutor file. Claude Code reads this first.
+- **[PROGRESS.md](PROGRESS.md)** — checkbox list. Claude updates it as you go.
+- **[ALL-RESOURCES.md](ALL-RESOURCES.md)** — every tool / connector / skill referenced in the course, organized by day.
+
+> **Videos live on YouTube + Skool.** Too big for git (~8GB). The repo is the conversation you have *while* watching.
+
+---
+
+## Want to clone it manually?
+
+```bash
+git clone https://github.com/Samin12/claude-course
+cd claude-course
+claude
+```
+
+Then ask Claude what to do next. It knows.
 
 ---
 
 ## License
 
-MIT. Use it, fork it, ship it.
+MIT. Fork it, ship it, sell what you build with it.
