@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Day 21 — Build Like a Real Engineering Team · Claude Course</title>
+<link rel="stylesheet" href="../../assets/worksheet.css">
+</head>
+<body data-day="day-21">
+<div class="page">
+
+<header class="day-header w4">
+  <div class="day-badge">Day 21 of 28 · Week 4</div>
+  <h1>Build Like a Real Engineering Team</h1>
+  <div class="meta">
+    Video: <code>3:17:00–3:27:30</code> ·
+    <a href="README.md">README</a> ·
+    <a href="lesson.md">Lesson</a> ·
+    <a href="resources.md">Resources</a> ·
+    <a href="video-section.md">Transcript</a>
+  </div>
+</header>
+
+<div class="callout">
+  <span class="label pain">Today's pain</span>
+  You tell Claude &#x27;build me X&#x27; and end up in a loop of fixes — because you skipped how real teams actually ship.
+</div>
+<div class="callout">
+  <span class="label action">Today's action</span>
+  Learn the build loop real engineering teams use, then install the setup (AutoForge + Codex) that copies it.
+</div>
+
+<section>
+  <h2>Walk through today</h2>
+  <p class="help">Check items as you do them. Your progress auto-saves in this browser.</p>
+  <ul class="checklist">
+        <li><input type="checkbox" data-item="step-1" id="step-21-1"><label for="step-21-1">Know what you&#x27;re signing up for. This chapter burns tokens. You&#x27;ll want a Claude Max plan or a Codex plan (or both) because we&#x27;re leaving agents running overnight. Don&#x27;t start this on a free tier.</label></li>
+        <li><input type="checkbox" data-item="step-2" id="step-21-2"><label for="step-21-2">Learn the loop before you run it. Every software team follows the same repeatable process — PRD → tickets → code → review → test → merge. Then it loops. That&#x27;s the shape we&#x27;re handing to AI.</label></li>
+        <li><input type="checkbox" data-item="step-3" id="step-21-3"><label for="step-21-3">Step one of the loop is the PRD. Product requirement doc. What we&#x27;re building, why, who it&#x27;s for, what features, how users flow through it, edge cases. No code yet. This is the foundation — bad decisions here become bugs later and the AI will loop in confusion. Don&#x27;t rush this.</label></li>
+        <li><input type="checkbox" data-item="step-4" id="step-21-4"><label for="step-21-4">Step two: break the PRD into tickets. Task 1 &quot;build sign up page.&quot; Task 2 &quot;test sign up page.&quot; Could be 200 tasks. You don&#x27;t write these — AI will. Each ticket is scoped so one Claude sub agent can pick it up, finish it, and hand it off.</label></li>
+        <li><input type="checkbox" data-item="step-5" id="step-21-5"><label for="step-21-5">Step three: agents action each task. One master Claude agent spins up sub agents, assigns them to tasks, moves them across a Kanban board — backlog, in progress, review, done. Then it does it again for the next ticket. All night.</label></li>
+        <li><input type="checkbox" data-item="step-6" id="step-21-6"><label for="step-21-6">Install AutoForge. This is the software that runs that whole loop. Open Claude Code in a fresh folder and say: &quot;Autoforge. Hey, can you spin this up, please?&quot; Wait for it.</label></li>
+        <li><input type="checkbox" data-item="step-7" id="step-21-7"><label for="step-21-7">Set up Codex as your backup. Claude went down mid-recording — that&#x27;s why redundancy matters. Google &quot;Codex,&quot; download the Mac OS app, sign in with your ChatGPT subscription, switch to GPT-5 (Samin uses GPT-4.5/5-class). Now you can run the exact same Autoforge setup from Codex if Claude is ever down.</label></li>
+  </ul>
+  <div class="progress-bar"><div class="fill"></div></div>
+  <div class="help" data-progress-label style="margin-top:10px;">0 of 7 done (0%)</div>
+</section>
+
+<section>
+  <h2>Your reflection</h2>
+  <p class="help">Fill these out as you go. They save automatically — come back anytime.</p>
+
+  <div class="fillin">
+    <label for="d21-before">Before you start — what do you expect to happen today?</label>
+    <textarea id="d21-before" data-field="before" placeholder="One or two sentences."></textarea>
+  </div>
+
+  <div class="fillin">
+    <label for="d21-tried">What you actually did — paste the prompt, the output, or describe what happened.</label>
+    <textarea id="d21-tried" data-field="tried" placeholder="Paste a prompt, a result, a screenshot description, or what surprised you."></textarea>
+  </div>
+
+  <div class="fillin">
+    <label for="d21-stuck">What got you stuck — and how you got past it (or where you're still stuck).</label>
+    <textarea id="d21-stuck" data-field="stuck" placeholder="Blank is fine if nothing tripped you up."></textarea>
+  </div>
+
+  <div class="fillin">
+    <label for="d21-commit">One thing you'll do with this <em>tomorrow</em>.</label>
+    <input type="text" id="d21-commit" data-field="commit" placeholder="One sentence. Keep it small.">
+  </div>
+</section>
+
+<section><h2>Try it yourself</h2><p class='help'>Pick the folder where your AI OS lives. Open Claude Code in it. Ask it to install AutoForge. While that spins up, download Codex on the side. That&#x27;s today.</p></section>
+
+<section>
+  <h2>Save your work</h2>
+  <div class="actions">
+    <button class="primary" data-action="save">Save</button>
+    <button data-action="export">Export as Markdown</button>
+    <button class="danger" data-action="reset">Reset this worksheet</button>
+  </div>
+  <div class="status"></div>
+  <p class="help" style="margin-top:14px;">Saves to this browser's local storage. Export downloads a <code>.md</code> file you can commit to <code>artifact/</code>.</p>
+</section>
+
+<aside class="takeaways">
+  <h3>Key takeaways</h3>
+  <ul>
+          <li>Long running agent teams copy the real software engineering loop: PRD → tickets → agents → review → merge → repeat.</li>
+          <li>The PRD is the foundation. Every bad decision here becomes a bug you&#x27;ll pay for later.</li>
+          <li>Tickets exist so each sub agent can fit one scoped task inside its context window. That&#x27;s why we break things down.</li>
+          <li>AutoForge is the tool that runs the whole loop for you. You steer, it builds.</li>
+          <li>Never be dependent on one provider. Install Codex alongside Claude so when one goes down, you keep shipping.</li>
+  </ul>
+</aside>
+
+<nav class="day-nav">
+  <div><a href="../day-20-self-improving-why/worksheet.html">← Day 20</a></div>
+  <div><a href="../../INDEX.md">All days</a></div>
+  <div><a href="../day-22-plan-first/worksheet.html">Day 22 →</a></div>
+</nav>
+
+</div>
+<script src="../../assets/worksheet.js"></script>
+</body>
+</html>

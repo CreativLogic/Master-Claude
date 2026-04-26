@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Day 11 — Build Your First Real Pipeline · Claude Course</title>
+<link rel="stylesheet" href="../../assets/worksheet.css">
+</head>
+<body data-day="day-11">
+<div class="page">
+
+<header class="day-header w2">
+  <div class="day-badge">Day 11 of 28 · Week 2</div>
+  <h1>Build Your First Real Pipeline</h1>
+  <div class="meta">
+    Video: <code>1:23:00–1:33:42</code> ·
+    <a href="README.md">README</a> ·
+    <a href="lesson.md">Lesson</a> ·
+    <a href="resources.md">Resources</a> ·
+    <a href="video-section.md">Transcript</a>
+  </div>
+</header>
+
+<div class="callout">
+  <span class="label pain">Today's pain</span>
+  You have a content workflow that still takes hours of copy-pasting across tools.
+</div>
+<div class="callout">
+  <span class="label action">Today's action</span>
+  Build your first Claude Code pipeline — something that goes from idea to published end-to-end.
+</div>
+
+<section>
+  <h2>Walk through today</h2>
+  <p class="help">Check items as you do them. Your progress auto-saves in this browser.</p>
+  <ul class="checklist">
+        <li><input type="checkbox" data-item="step-1" id="step-11-1"><label for="step-11-1">Iterate the carousel until it looks like you. Drop your headshot into the project folder. Then tell Claude: &quot;Edit this skill so it always uses my image, I just attached it. Remake the carousel and open it up in my Finder again.&quot; If the copy isn&#x27;t right or the background&#x27;s wrong, just say that. This is the iteration loop — type, check, correct, type, check, correct.</label></li>
+        <li><input type="checkbox" data-item="step-2" id="step-11-2"><label for="step-11-2">Lock the skill so future runs use the right image. Once the carousel looks good, tell Claude: &quot;Edit the skill to always use this picture, and save the skill inside this folder.&quot; Now every future carousel starts from your actual template.</label></li>
+        <li><input type="checkbox" data-item="step-3" id="step-11-3"><label for="step-11-3">Set up Blotato for auto-posting. Go to blotato.com, log in, open Settings on the bottom left. Connect your accounts (YouTube, Instagram, wherever you post). Then go to API — you&#x27;ll see something that says Claude Desktop / Claude Cowork. Copy that MCP URL.</label></li>
+        <li><input type="checkbox" data-item="step-4" id="step-11-4"><label for="step-11-4">Wire Blotato into Claude as a custom connector. In Claude, go to Customize → Connector → plus button → Add custom connector. Name it &quot;Blotato&quot;, paste the MCP, hit add. Then hit Connect, approve, and toggle Always allow. Done. Now ask Claude: &quot;What accounts do you have connected in my Blotato?&quot; to verify.</label></li>
+        <li><input type="checkbox" data-item="step-5" id="step-11-5"><label for="step-11-5">Chain the pipeline end-to-end in one prompt. Go back to your carousel project and tell Claude:</label></li>
+        <li><input type="checkbox" data-item="step-6" id="step-11-6"><label for="step-11-6">Decide if you want a review step. If you don&#x27;t want fully auto-post, just tell Claude to stop after generating the carousel and wait for your approval. Then you review, tweak, and post manually. Same pipeline, with a human checkpoint.</label></li>
+        <li><input type="checkbox" data-item="step-7" id="step-11-7"><label for="step-11-7">Preview what&#x27;s next — connect Alpaca for Day 12. The same pipeline pattern works for trading. Go to alpaca.markets, sign up, open the left-hand menu, flip to the paper trading account (fake money). Create one called &quot;Trading Claude,&quot; give yourself $50,000. Scroll down to API keys, hit Generate new API keys, save all three: endpoint, key, secret. Open Claude Code, make a new folder called Trading, paste all three in. Then test the connection: &quot;I just gave you the docs and my keys for my Alpaca paper trading account. Can you buy one share of Apple? I want to see it inside my account.&quot; When it shows up in Alpaca, you&#x27;re wired up. Last step — tell Claude to save those credentials inside the folder so you never have to paste them again.</label></li>
+  </ul>
+  <div class="progress-bar"><div class="fill"></div></div>
+  <div class="help" data-progress-label style="margin-top:10px;">0 of 7 done (0%)</div>
+</section>
+
+<section>
+  <h2>Your reflection</h2>
+  <p class="help">Fill these out as you go. They save automatically — come back anytime.</p>
+
+  <div class="fillin">
+    <label for="d11-before">Before you start — what do you expect to happen today?</label>
+    <textarea id="d11-before" data-field="before" placeholder="One or two sentences."></textarea>
+  </div>
+
+  <div class="fillin">
+    <label for="d11-tried">What you actually did — paste the prompt, the output, or describe what happened.</label>
+    <textarea id="d11-tried" data-field="tried" placeholder="Paste a prompt, a result, a screenshot description, or what surprised you."></textarea>
+  </div>
+
+  <div class="fillin">
+    <label for="d11-stuck">What got you stuck — and how you got past it (or where you're still stuck).</label>
+    <textarea id="d11-stuck" data-field="stuck" placeholder="Blank is fine if nothing tripped you up."></textarea>
+  </div>
+
+  <div class="fillin">
+    <label for="d11-commit">One thing you'll do with this <em>tomorrow</em>.</label>
+    <input type="text" id="d11-commit" data-field="commit" placeholder="One sentence. Keep it small.">
+  </div>
+</section>
+
+<section><h2>Try it yourself</h2><p class='help'>Pick one content output you do manually every week — a tweet, a carousel, a newsletter blurb. Build the full research → create → post pipeline today with Blotato. Run it once. Let tomorrow&#x27;s scheduled run go live on its own.</p></section>
+
+<section>
+  <h2>Save your work</h2>
+  <div class="actions">
+    <button class="primary" data-action="save">Save</button>
+    <button data-action="export">Export as Markdown</button>
+    <button class="danger" data-action="reset">Reset this worksheet</button>
+  </div>
+  <div class="status"></div>
+  <p class="help" style="margin-top:14px;">Saves to this browser's local storage. Export downloads a <code>.md</code> file you can commit to <code>artifact/</code>.</p>
+</section>
+
+<aside class="takeaways">
+  <h3>Key takeaways</h3>
+  <ul>
+          <li>A pipeline is just a chain: research → create → post, one prompt, one schedule.</li>
+          <li>Custom connectors are how you plug any tool with an MCP into Claude — Blotato, Firecrawl, anything.</li>
+          <li>You can put a human review step in the middle anytime. Auto-post is optional, not required.</li>
+          <li>The same pattern — connector + folder + scheduled prompt — is the setup for trading, reporting, outreach, anything.</li>
+          <li>Save your API keys to a file in the project folder. You&#x27;re not meant to paste them every time.</li>
+  </ul>
+</aside>
+
+<nav class="day-nav">
+  <div><a href="../day-10-meet-claude-code/worksheet.html">← Day 10</a></div>
+  <div><a href="../../INDEX.md">All days</a></div>
+  <div><a href="../day-12-what-to-automate/worksheet.html">Day 12 →</a></div>
+</nav>
+
+</div>
+<script src="../../assets/worksheet.js"></script>
+</body>
+</html>

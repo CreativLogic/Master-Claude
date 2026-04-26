@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Day 15 — Pick the Right Claude for the Job · Claude Course</title>
+<link rel="stylesheet" href="../../assets/worksheet.css">
+</head>
+<body data-day="day-15">
+<div class="page">
+
+<header class="day-header w3">
+  <div class="day-badge">Day 15 of 28 · Week 3</div>
+  <h1>Pick the Right Claude for the Job</h1>
+  <div class="meta">
+    Video: <code>2:03:00–2:18:00</code> ·
+    <a href="README.md">README</a> ·
+    <a href="lesson.md">Lesson</a> ·
+    <a href="resources.md">Resources</a> ·
+    <a href="video-section.md">Transcript</a>
+  </div>
+</header>
+
+<div class="callout">
+  <span class="label pain">Today's pain</span>
+  You only know one way into Claude — and it&#x27;s the wrong one half the time.
+</div>
+<div class="callout">
+  <span class="label action">Today's action</span>
+  Learn all the places Claude lives (desktop, VS Code, Warp, Canvas, Mac Mini) and pick the right door for each job.
+</div>
+
+<section>
+  <h2>Walk through today</h2>
+  <p class="help">Check items as you do them. Your progress auto-saves in this browser.</p>
+  <ul class="checklist">
+        <li><input type="checkbox" data-item="step-1" id="step-15-1"><label for="step-15-1">Sync the terminal session back to desktop. In the terminal, run /remote control and enable remote control from the session. Now reload the Claude Desktop app and the exact terminal session shows up there too — same conversation, synced both ways. Handy when you start in the terminal but want to keep going visually.</label></li>
+        <li><input type="checkbox" data-item="step-2" id="step-15-2"><label for="step-15-2">Try VS Code as a door. Download VS Code, open the Extensions tab, search &quot;Claude,&quot; hit install. Click the little orange icon, sign in. You can chat Claude the same way as desktop, plus it has access to any file in your opened folder. Fair warning: if you close a session in VS Code, you&#x27;ll probably lose it forever. That&#x27;s why Samin still prefers the desktop for starters.</label></li>
+        <li><input type="checkbox" data-item="step-3" id="step-15-3"><label for="step-15-3">Set up Warp. Download Warp. It&#x27;s a terminal built for agentic development. Hit &quot;Get started.&quot; Pick &quot;Agentic-driven development.&quot; Open a local folder (try your AIOS folder). Warp&#x27;s wins: you can see all past conversations, there&#x27;s a project explorer, you can share files with your team, and you can drop MCPs directly into it so everything lives in one place.</label></li>
+        <li><input type="checkbox" data-item="step-4" id="step-15-4"><label for="step-15-4">Peek at Claude Canvas / Poppy AI. This is Samin&#x27;s favorite — he wrote this whole course inside it. It&#x27;s a canvas with a file explorer, multiple Claude Code sessions running side by side, and you can drag files directly into prompts. You can spin up 4 versions of the same thing, pick the best, and keep going. It&#x27;s local, so it uses your Claude subscription instead of burning API tokens.</label></li>
+        <li><input type="checkbox" data-item="step-5" id="step-15-5"><label for="step-15-5">Try Anthropic&#x27;s Agent Manager. Go to platform.claude.com. Hit Quick start. Understand the three concepts: environment (a computer Claude spins up and manages), agent (with MCPs, skills, prompt, model), sessions (like individual Claude chats for that agent). Create an agent — e.g. &quot;I want you to create an agent that writes my YouTube scripts using the Ralph Wiggum Copywriter skill.&quot; Hit go. Create a new session, say hi. You now have an agent running in the cloud — your computer can be off.</label></li>
+        <li><input type="checkbox" data-item="step-6" id="step-15-6"><label for="step-15-6">Know the tradeoffs. Agent Manager runs in the cloud, has built-in tools, session tracking, remembers context over time. But it doesn&#x27;t use your Claude subscription — you pay API prices. That $200/month plan gets you ~$5k in usage. Same workload on Agent Manager, you&#x27;d spend the $5k. You&#x27;re also locked to Claude models — no swapping in a better OpenAI or Gemini model when one drops.</label></li>
+        <li><input type="checkbox" data-item="step-7" id="step-15-7"><label for="step-15-7">The Mac Mini solution (preview). A lot of people are buying Mac Minis and running Claude Code on them 24/7. The Mac Mini becomes your local &quot;server in the cloud&quot; — you text it from your phone, it runs agents, and you don&#x27;t pay API prices. Samin shows his own AI Agents Control Center briefly — dashboard, Kanban board, vault for keys, calendar for scheduled tasks, Telegram integration. We&#x27;ll build the actual second-brain version of this starting Day 16 with Obsidian + terminal.</label></li>
+  </ul>
+  <div class="progress-bar"><div class="fill"></div></div>
+  <div class="help" data-progress-label style="margin-top:10px;">0 of 7 done (0%)</div>
+</section>
+
+<section>
+  <h2>Your reflection</h2>
+  <p class="help">Fill these out as you go. They save automatically — come back anytime.</p>
+
+  <div class="fillin">
+    <label for="d15-before">Before you start — what do you expect to happen today?</label>
+    <textarea id="d15-before" data-field="before" placeholder="One or two sentences."></textarea>
+  </div>
+
+  <div class="fillin">
+    <label for="d15-tried">What you actually did — paste the prompt, the output, or describe what happened.</label>
+    <textarea id="d15-tried" data-field="tried" placeholder="Paste a prompt, a result, a screenshot description, or what surprised you."></textarea>
+  </div>
+
+  <div class="fillin">
+    <label for="d15-stuck">What got you stuck — and how you got past it (or where you're still stuck).</label>
+    <textarea id="d15-stuck" data-field="stuck" placeholder="Blank is fine if nothing tripped you up."></textarea>
+  </div>
+
+  <div class="fillin">
+    <label for="d15-commit">One thing you'll do with this <em>tomorrow</em>.</label>
+    <input type="text" id="d15-commit" data-field="commit" placeholder="One sentence. Keep it small.">
+  </div>
+</section>
+
+<section><h2>Try it yourself</h2><p class='help'>Install Warp today and open one of your existing project folders inside it. Run `claude` from Warp&#x27;s terminal and watch the same session you started in desktop pick right up.</p></section>
+
+<section>
+  <h2>Save your work</h2>
+  <div class="actions">
+    <button class="primary" data-action="save">Save</button>
+    <button data-action="export">Export as Markdown</button>
+    <button class="danger" data-action="reset">Reset this worksheet</button>
+  </div>
+  <div class="status"></div>
+  <p class="help" style="margin-top:14px;">Saves to this browser's local storage. Export downloads a <code>.md</code> file you can commit to <code>artifact/</code>.</p>
+</section>
+
+<aside class="takeaways">
+  <h3>Key takeaways</h3>
+  <ul>
+          <li>Claude is one house. Desktop, terminal, VS Code, Warp, canvas, Agent Manager — different doors, same rooms inside.</li>
+          <li>Every interface has its own advantage. Pick the one that matches the job.</li>
+          <li>Anthropic&#x27;s Agent Manager (platform.claude.com) runs agents in the cloud with session tracking and built-in tools — but it bills at API rates and locks you to Claude models.</li>
+          <li>A Mac Mini gives you the same &quot;always on&quot; benefit without API bills or vendor lock-in.</li>
+          <li>/remote control in the terminal syncs your session back to desktop. Useful when you want to switch views mid-task.</li>
+  </ul>
+</aside>
+
+<nav class="day-nav">
+  <div><a href="../day-14-overnight-strategy/worksheet.html">← Day 14</a></div>
+  <div><a href="../../INDEX.md">All days</a></div>
+  <div><a href="../day-16-second-brain/worksheet.html">Day 16 →</a></div>
+</nav>
+
+</div>
+<script src="../../assets/worksheet.js"></script>
+</body>
+</html>

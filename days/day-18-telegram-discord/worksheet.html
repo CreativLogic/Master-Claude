@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Day 18 — Talk to Claude From Telegram and Discord · Claude Course</title>
+<link rel="stylesheet" href="../../assets/worksheet.css">
+</head>
+<body data-day="day-18">
+<div class="page">
+
+<header class="day-header w3">
+  <div class="day-badge">Day 18 of 28 · Week 3</div>
+  <h1>Talk to Claude From Telegram and Discord</h1>
+  <div class="meta">
+    Video: <code>2:40:00–2:54:40</code> ·
+    <a href="README.md">README</a> ·
+    <a href="lesson.md">Lesson</a> ·
+    <a href="resources.md">Resources</a> ·
+    <a href="video-section.md">Transcript</a>
+  </div>
+</header>
+
+<div class="callout">
+  <span class="label pain">Today's pain</span>
+  You get ideas on walks and voice memos at 11pm — and none of it reaches your brain until you sit at your laptop.
+</div>
+<div class="callout">
+  <span class="label action">Today's action</span>
+  Pair Claude to Telegram and Discord so your brain updates from wherever you are.
+</div>
+
+<section>
+  <h2>Walk through today</h2>
+  <p class="help">Check items as you do them. Your progress auto-saves in this browser.</p>
+  <ul class="checklist">
+        <li><input type="checkbox" data-item="step-1" id="step-18-1"><label for="step-18-1">Install Bun and make sure Claude Code is running. Open your terminal, check that Bun is installed (if not, grab it), and type claude to spin up a session. If you already have Claude Code, you can skip the install step.</label></li>
+        <li><input type="checkbox" data-item="step-2" id="step-18-2"><label for="step-18-2">Make a Telegram bot. Open Telegram, search for BotFather, hit start, type /newbot, give it a name. Bot names are weirdly taken a lot — just keep trying until one sticks. BotFather hands you a token. Copy it.</label></li>
+        <li><input type="checkbox" data-item="step-3" id="step-18-3"><label for="step-18-3">Install the Telegram plugin inside Claude. In Claude Code, run /plugin install telegram, reload plugins, paste your BotFather token when prompted, hit yes + always continue. Then /exit and relaunch Claude with the command the plugin gives you.</label></li>
+        <li><input type="checkbox" data-item="step-4" id="step-18-4"><label for="step-18-4">Pair your phone. Open your bot in Telegram, hit start, DM it anything — it sends a 6-digit pair code. Run that code in Claude Code and allow the pairing. Now text &quot;Hi&quot; from your phone — you should see Claude respond, and if you watch your laptop, Obsidian is lighting up because Claude is reading from your evolving brain.</label></li>
+        <li><input type="checkbox" data-item="step-5" id="step-18-5"><label for="step-18-5">Do the same for Discord. Go to discord.com/developers/applications, create a new application (call it Alexbot or whatever), go to the Bot tab, reset the token, copy it. Scroll down and turn on message content intent, members intent, presence intent. Give it admin privileges. Save.</label></li>
+        <li><input type="checkbox" data-item="step-6" id="step-18-6"><label for="step-18-6">Install the Discord plugin in Claude. New terminal, run claude, then /plugin install discord, reload, run /discord configure and paste your token. Allow all.</label></li>
+        <li><input type="checkbox" data-item="step-7" id="step-18-7"><label for="step-18-7">Invite the bot to your server. Make a Discord server for yourself if you don&#x27;t have one. Back in the developer portal, go to Installation, copy the install link, paste it in a new tab, authorize. Right-click your bot in the server → message → it sends a pair code. Paste that code in Claude Code to pair.</label></li>
+        <li><input type="checkbox" data-item="step-8" id="step-18-8"><label for="step-18-8">Test it. DM your bot &quot;What was the last carousel I made about?&quot; or &quot;What do you know about Alex?&quot; — watch it pull from your evolving brain and answer. You now have the same Claude, same context, from Telegram or Discord, anywhere.</label></li>
+  </ul>
+  <div class="progress-bar"><div class="fill"></div></div>
+  <div class="help" data-progress-label style="margin-top:10px;">0 of 8 done (0%)</div>
+</section>
+
+<section>
+  <h2>Your reflection</h2>
+  <p class="help">Fill these out as you go. They save automatically — come back anytime.</p>
+
+  <div class="fillin">
+    <label for="d18-before">Before you start — what do you expect to happen today?</label>
+    <textarea id="d18-before" data-field="before" placeholder="One or two sentences."></textarea>
+  </div>
+
+  <div class="fillin">
+    <label for="d18-tried">What you actually did — paste the prompt, the output, or describe what happened.</label>
+    <textarea id="d18-tried" data-field="tried" placeholder="Paste a prompt, a result, a screenshot description, or what surprised you."></textarea>
+  </div>
+
+  <div class="fillin">
+    <label for="d18-stuck">What got you stuck — and how you got past it (or where you're still stuck).</label>
+    <textarea id="d18-stuck" data-field="stuck" placeholder="Blank is fine if nothing tripped you up."></textarea>
+  </div>
+
+  <div class="fillin">
+    <label for="d18-commit">One thing you'll do with this <em>tomorrow</em>.</label>
+    <input type="text" id="d18-commit" data-field="commit" placeholder="One sentence. Keep it small.">
+  </div>
+</section>
+
+<section><h2>Try it yourself</h2><p class='help'>Pair just Telegram today. Skip Discord if you&#x27;re short on time — Telegram is the faster win. Send your bot one voice memo or one quick idea before you go to sleep. If it lands in your brain folder, you&#x27;ve leveled up.</p></section>
+
+<section>
+  <h2>Save your work</h2>
+  <div class="actions">
+    <button class="primary" data-action="save">Save</button>
+    <button data-action="export">Export as Markdown</button>
+    <button class="danger" data-action="reset">Reset this worksheet</button>
+  </div>
+  <div class="status"></div>
+  <p class="help" style="margin-top:14px;">Saves to this browser's local storage. Export downloads a <code>.md</code> file you can commit to <code>artifact/</code>.</p>
+</section>
+
+<aside class="takeaways">
+  <h3>Key takeaways</h3>
+  <ul>
+          <li>Your AI OS is portable the moment you pair a channel. Same folder, same context, reachable from anywhere.</li>
+          <li>Telegram + BotFather is the easiest win. Discord takes more clicks because of the developer portal + intents.</li>
+          <li>Both plugins install with /plugin install &lt;name&gt; inside Claude Code, then configure with the token.</li>
+          <li>The pairing flow is always the same: DM the bot → get a code → paste it in Claude Code → allow.</li>
+          <li>This is sharpening the axe. Pair one channel and move on — the real leverage comes from what you build next.</li>
+  </ul>
+</aside>
+
+<nav class="day-nav">
+  <div><a href="../day-17-pull-life-together/worksheet.html">← Day 17</a></div>
+  <div><a href="../../INDEX.md">All days</a></div>
+  <div><a href="../day-19-ai-os-tour/worksheet.html">Day 19 →</a></div>
+</nav>
+
+</div>
+<script src="../../assets/worksheet.js"></script>
+</body>
+</html>

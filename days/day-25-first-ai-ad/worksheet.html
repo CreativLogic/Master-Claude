@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Day 25 — Make Your First AI Ad · Claude Course</title>
+<link rel="stylesheet" href="../../assets/worksheet.css">
+</head>
+<body data-day="day-25">
+<div class="page">
+
+<header class="day-header w5">
+  <div class="day-badge">Day 25 of 28 · Week 5</div>
+  <h1>Make Your First AI Ad</h1>
+  <div class="meta">
+    Video: <code>3:56:46–4:00:00</code> ·
+    <a href="README.md">README</a> ·
+    <a href="lesson.md">Lesson</a> ·
+    <a href="resources.md">Resources</a> ·
+    <a href="video-section.md">Transcript</a>
+  </div>
+</header>
+
+<div class="callout">
+  <span class="label pain">Today's pain</span>
+  You&#x27;ve got something to sell, but nobody&#x27;s seeing it.
+</div>
+<div class="callout">
+  <span class="label action">Today's action</span>
+  Generate your first AI ad creative (image + copy) end-to-end.
+</div>
+
+<section>
+  <h2>Walk through today</h2>
+  <p class="help">Check items as you do them. Your progress auto-saves in this browser.</p>
+  <ul class="checklist">
+        <li><input type="checkbox" data-item="step-1" id="step-25-1"><label for="step-25-1">Sign up for HeyGen. Head to heygen.com and make an account. HeyGen just released Seedance 2.0 and the results are honestly pretty crazy.</label></li>
+        <li><input type="checkbox" data-item="step-2" id="step-25-2"><label for="step-25-2">Grab your HeyGen API key. Inside HeyGen, click Developers in the sidebar, then API dashboard on the bottom left. Hit Create API key. Name it something obvious like &quot;for creating video ads&quot; and mark that it&#x27;s for an agent so they know what&#x27;s up.</label></li>
+        <li><input type="checkbox" data-item="step-3" id="step-25-3"><label for="step-25-3">Connect HeyGen to Composio. Go back to Composio, hit Connect apps, find HeyGen, paste the API key, and click connect. Composio is already wired into Claude as a connector from earlier in the course, so you&#x27;re good.</label></li>
+        <li><input type="checkbox" data-item="step-4" id="step-25-4"><label for="step-25-4">Open Claude and write your ad prompt in plain English. Something like: &quot;Can you use the Composio connector, and through that use HeyGen, and with the Seedance model make an ad for [your product].&quot; Describe the scenario you want — the pain, the fix, the happy ending. Samin&#x27;s example: an HVAC company missing calls, a friend shows them BookedIn.ai, and now AI handles every call.</label></li>
+        <li><input type="checkbox" data-item="step-5" id="step-25-5"><label for="step-25-5">Tell it how to deliver the result. End the prompt with &quot;send me the link or download the video.&quot; Hit go and wait.</label></li>
+        <li><input type="checkbox" data-item="step-6" id="step-25-6"><label for="step-25-6">Watch the output and note what&#x27;s off. Samin&#x27;s first ad said &quot;Booked AI&quot; instead of &quot;BookedIn AI&quot; because he didn&#x27;t say &quot;in&quot; clearly — and it didn&#x27;t use his logos. That&#x27;s fine. You iterate.</label></li>
+  </ul>
+  <div class="progress-bar"><div class="fill"></div></div>
+  <div class="help" data-progress-label style="margin-top:10px;">0 of 6 done (0%)</div>
+</section>
+
+<section>
+  <h2>Your reflection</h2>
+  <p class="help">Fill these out as you go. They save automatically — come back anytime.</p>
+
+  <div class="fillin">
+    <label for="d25-before">Before you start — what do you expect to happen today?</label>
+    <textarea id="d25-before" data-field="before" placeholder="One or two sentences."></textarea>
+  </div>
+
+  <div class="fillin">
+    <label for="d25-tried">What you actually did — paste the prompt, the output, or describe what happened.</label>
+    <textarea id="d25-tried" data-field="tried" placeholder="Paste a prompt, a result, a screenshot description, or what surprised you."></textarea>
+  </div>
+
+  <div class="fillin">
+    <label for="d25-stuck">What got you stuck — and how you got past it (or where you're still stuck).</label>
+    <textarea id="d25-stuck" data-field="stuck" placeholder="Blank is fine if nothing tripped you up."></textarea>
+  </div>
+
+  <div class="fillin">
+    <label for="d25-commit">One thing you'll do with this <em>tomorrow</em>.</label>
+    <input type="text" id="d25-commit" data-field="commit" placeholder="One sentence. Keep it small.">
+  </div>
+</section>
+
+<section><h2>Try it yourself</h2><p class='help'>Write a 3-sentence scenario for an ad for your own product or a client&#x27;s — pain, fix, happy ending. Drop it into Claude with the Composio + HeyGen prompt above. Render one video today. Don&#x27;t polish it. Just ship one.</p></section>
+
+<section>
+  <h2>Save your work</h2>
+  <div class="actions">
+    <button class="primary" data-action="save">Save</button>
+    <button data-action="export">Export as Markdown</button>
+    <button class="danger" data-action="reset">Reset this worksheet</button>
+  </div>
+  <div class="status"></div>
+  <p class="help" style="margin-top:14px;">Saves to this browser's local storage. Export downloads a <code>.md</code> file you can commit to <code>artifact/</code>.</p>
+</section>
+
+<aside class="takeaways">
+  <h3>Key takeaways</h3>
+  <ul>
+          <li>Claude + Composio + HeyGen = one prompt turns into a finished video ad.</li>
+          <li>Describe the pain, the fix, and the happy ending in plain English. That&#x27;s the script.</li>
+          <li>First output won&#x27;t be perfect. Mispronounced brand names and missing logos are normal — you iterate.</li>
+          <li>Once the pipeline works for one ad, you can put it on a schedule and crank out variations.</li>
+          <li>The skill isn&#x27;t video editing anymore. It&#x27;s writing a clear prompt and wiring the right tools together.</li>
+  </ul>
+</aside>
+
+<nav class="day-nav">
+  <div><a href="../day-24-top-task-to-skill/worksheet.html">← Day 24</a></div>
+  <div><a href="../../INDEX.md">All days</a></div>
+  <div><a href="../day-26-video-clone/worksheet.html">Day 26 →</a></div>
+</nav>
+
+</div>
+<script src="../../assets/worksheet.js"></script>
+</body>
+</html>

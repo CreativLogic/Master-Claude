@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Day 22 — Plan Before You Build · Claude Course</title>
+<link rel="stylesheet" href="../../assets/worksheet.css">
+</head>
+<body data-day="day-22">
+<div class="page">
+
+<header class="day-header w4">
+  <div class="day-badge">Day 22 of 28 · Week 4</div>
+  <h1>Plan Before You Build</h1>
+  <div class="meta">
+    Video: <code>3:27:30–3:38:00</code> ·
+    <a href="README.md">README</a> ·
+    <a href="lesson.md">Lesson</a> ·
+    <a href="resources.md">Resources</a> ·
+    <a href="video-section.md">Transcript</a>
+  </div>
+</header>
+
+<div class="callout">
+  <span class="label pain">Today's pain</span>
+  Jumping from idea to code is why your projects stall at 70%.
+</div>
+<div class="callout">
+  <span class="label action">Today's action</span>
+  Force the order: idea → plan → MVP → refine. Write the plan document before a line of code gets written.
+</div>
+
+<section>
+  <h2>Walk through today</h2>
+  <p class="help">Check items as you do them. Your progress auto-saves in this browser.</p>
+  <ul class="checklist">
+        <li><input type="checkbox" data-item="step-1" id="step-22-1"><label for="step-22-1">Open AutoForge in your browser. It&#x27;ll say &quot;Welcome to AutoForge.&quot; Hit Start Project, name it (use hyphens, no spaces), and pick a fresh folder for it to live in. Samin names his &quot;project-canvas.&quot;</label></li>
+        <li><input type="checkbox" data-item="step-2" id="step-22-2"><label for="step-22-2">Pick &quot;blank application&quot; and &quot;create with Claude.&quot; If Claude happens to be down, run claude hi in a terminal to check — sometimes it&#x27;s back in a minute.</label></li>
+        <li><input type="checkbox" data-item="step-3" id="step-22-3"><label for="step-22-3">Dump your idea by voice. This is a word dump, not a pitch deck. Samin literally says: &quot;Hey, I want to build a spatial canvas workspace where I can use Claude Code or Codex. Think of it like an infinite zoomable whiteboard but I can also use drawings. I want tiles where I can do work, see markdown files, a file explorer I can switch around.&quot; Keep going until you&#x27;ve spit out everything in your head.</label></li>
+        <li><input type="checkbox" data-item="step-4" id="step-22-4"><label for="step-22-4">Let AutoForge ask you questions. This is the magic part. It&#x27;ll come back with dozens of little considerations — &quot;separate whiteboards per project?&quot; &quot;mini map?&quot; &quot;multiple terminals?&quot; &quot;preview mode like Notion?&quot; &quot;keyboard shortcuts?&quot; &quot;command-Z and drag-and-drop?&quot; — answer each one quickly. Don&#x27;t agonize. This is what locks the foundation in.</label></li>
+        <li><input type="checkbox" data-item="step-5" id="step-22-5"><label for="step-22-5">Call out the framework. Electron app vs web app, design system, the stack. Samin asks for an Electron app so it opens natively on Mac and Windows. If you don&#x27;t care, say &quot;just make it quick, I don&#x27;t want to be involved in technical decisions right now.&quot;</label></li>
+        <li><input type="checkbox" data-item="step-6" id="step-22-6"><label for="step-22-6">Hit go and let it generate the app-spec.txt. That&#x27;s the document that contains every single task AutoForge is about to hand to sub agents. This is your PRD, broken down.</label></li>
+        <li><input type="checkbox" data-item="step-7" id="step-22-7"><label for="step-22-7">Know your alternatives. Samin&#x27;s second favorite is GSD framework (installs into Claude Code, no UI, just a plan). Superpowers is another one on GitHub. All of them use Claude or Codex under the hood — AutoForge just gives you a nice Kanban board to watch.</label></li>
+  </ul>
+  <div class="progress-bar"><div class="fill"></div></div>
+  <div class="help" data-progress-label style="margin-top:10px;">0 of 7 done (0%)</div>
+</section>
+
+<section>
+  <h2>Your reflection</h2>
+  <p class="help">Fill these out as you go. They save automatically — come back anytime.</p>
+
+  <div class="fillin">
+    <label for="d22-before">Before you start — what do you expect to happen today?</label>
+    <textarea id="d22-before" data-field="before" placeholder="One or two sentences."></textarea>
+  </div>
+
+  <div class="fillin">
+    <label for="d22-tried">What you actually did — paste the prompt, the output, or describe what happened.</label>
+    <textarea id="d22-tried" data-field="tried" placeholder="Paste a prompt, a result, a screenshot description, or what surprised you."></textarea>
+  </div>
+
+  <div class="fillin">
+    <label for="d22-stuck">What got you stuck — and how you got past it (or where you're still stuck).</label>
+    <textarea id="d22-stuck" data-field="stuck" placeholder="Blank is fine if nothing tripped you up."></textarea>
+  </div>
+
+  <div class="fillin">
+    <label for="d22-commit">One thing you'll do with this <em>tomorrow</em>.</label>
+    <input type="text" id="d22-commit" data-field="commit" placeholder="One sentence. Keep it small.">
+  </div>
+</section>
+
+<section><h2>Try it yourself</h2><p class='help'>Open AutoForge. Name one real thing you want to build — a personal tool, a side app, the thing you keep telling yourself you&#x27;d pay for. Word-dump it and answer every clarifying question. Save the app-spec.txt to `artifact/`.</p></section>
+
+<section>
+  <h2>Save your work</h2>
+  <div class="actions">
+    <button class="primary" data-action="save">Save</button>
+    <button data-action="export">Export as Markdown</button>
+    <button class="danger" data-action="reset">Reset this worksheet</button>
+  </div>
+  <div class="status"></div>
+  <p class="help" style="margin-top:14px;">Saves to this browser's local storage. Export downloads a <code>.md</code> file you can commit to <code>artifact/</code>.</p>
+</section>
+
+<aside class="takeaways">
+  <h3>Key takeaways</h3>
+  <ul>
+          <li>The right order is idea → plan → MVP → take over and refine. Not &quot;build me this thing.&quot;</li>
+          <li>A shaky foundation means you&#x27;ll loop forever. The plan step is what makes the foundation solid.</li>
+          <li>AutoForge&#x27;s real magic is the clarifying questions — it asks you about the little nitty-gritty details so you don&#x27;t have to think of them yourself.</li>
+          <li>Every plan becomes an app-spec.txt that gets broken into small tasks. Sub agents work through those one by one.</li>
+          <li>GSD and Superpowers are solid alternatives if you want to experiment. All of them run on Claude Code or Codex under the hood.</li>
+  </ul>
+</aside>
+
+<nav class="day-nav">
+  <div><a href="../day-21-engineering-team/worksheet.html">← Day 21</a></div>
+  <div><a href="../../INDEX.md">All days</a></div>
+  <div><a href="../day-23-overnight-apps/worksheet.html">Day 23 →</a></div>
+</nav>
+
+</div>
+<script src="../../assets/worksheet.js"></script>
+</body>
+</html>

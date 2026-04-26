@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Day 3 — Your First Project: Make Claude Do Real Work · Claude Course</title>
+<link rel="stylesheet" href="../../assets/worksheet.css">
+</head>
+<body data-day="day-03">
+<div class="page">
+
+<header class="day-header w1">
+  <div class="day-badge">Day 3 of 28 · Week 1</div>
+  <h1>Your First Project: Make Claude Do Real Work</h1>
+  <div class="meta">
+    Video: <code>09:57–23:04</code> ·
+    <a href="README.md">README</a> ·
+    <a href="lesson.md">Lesson</a> ·
+    <a href="resources.md">Resources</a> ·
+    <a href="video-section.md">Transcript</a>
+  </div>
+</header>
+
+<div class="callout">
+  <span class="label pain">Today's pain</span>
+  You&#x27;re staring at a pile of data and a deadline, and Claude feels like just a chat box.
+</div>
+<div class="callout">
+  <span class="label action">Today's action</span>
+  Create a Claude Project, drop in your files, write a system prompt, and build a branded deck + interactive widget.
+</div>
+
+<section>
+  <h2>Walk through today</h2>
+  <p class="help">Check items as you do them. Your progress auto-saves in this browser.</p>
+  <ul class="checklist">
+        <li><input type="checkbox" data-item="step-1" id="step-3-1"><label for="step-3-1">Create a new Project. Open the sidebar in the Claude Desktop app, hit Projects, then New Project. Name it something concrete — Alex named his PL for boss. Give it a short description (&quot;create a P&amp;L and see where we should allocate budget for next quarter&quot;).</label></li>
+        <li><input type="checkbox" data-item="step-2" id="step-3-2"><label for="step-3-2">Write a system prompt in the Instructions field. This is the text that gets inserted before every message in this project. Set the role, the tone, the rules. Alex&#x27;s was:</label></li>
+        <li><input type="checkbox" data-item="step-3" id="step-3-3"><label for="step-3-3">Drag all your files in. Credit card statements, ad platform receipts, revenue data, CRM exports — drag them into the Project files area. Claude ingests each one. Now it has the context it needs without you pasting anything.</label></li>
+        <li><input type="checkbox" data-item="step-4" id="step-3-4"><label for="step-3-4">Ask for the P&amp;L and charts. In a new chat inside the project, type something like:</label></li>
+        <li><input type="checkbox" data-item="step-5" id="step-3-5"><label for="step-3-5">Ask the follow-up that actually matters. Once you can see the data, the next question almost always writes itself:</label></li>
+        <li><input type="checkbox" data-item="step-6" id="step-3-6"><label for="step-3-6">Build the deck. Once the insights are there, ask Claude to package it:</label></li>
+        <li><input type="checkbox" data-item="step-7" id="step-3-7"><label for="step-3-7">Level it up — build an interactive widget. Instead of a static deck, ask for something the CEO can play with:</label></li>
+        <li><input type="checkbox" data-item="step-8" id="step-3-8"><label for="step-3-8">Save and publish the artifact. Top-right of the artifact → Save as artifact → Publish artifact → choose &quot;share with team&quot; or &quot;publish to web.&quot; You get a public link anyone can open and interact with. This is how you ship interactive tools without writing a single line of code.</label></li>
+  </ul>
+  <div class="progress-bar"><div class="fill"></div></div>
+  <div class="help" data-progress-label style="margin-top:10px;">0 of 8 done (0%)</div>
+</section>
+
+<section>
+  <h2>Your reflection</h2>
+  <p class="help">Fill these out as you go. They save automatically — come back anytime.</p>
+
+  <div class="fillin">
+    <label for="d3-before">Before you start — what do you expect to happen today?</label>
+    <textarea id="d3-before" data-field="before" placeholder="One or two sentences."></textarea>
+  </div>
+
+  <div class="fillin">
+    <label for="d3-tried">What you actually did — paste the prompt, the output, or describe what happened.</label>
+    <textarea id="d3-tried" data-field="tried" placeholder="Paste a prompt, a result, a screenshot description, or what surprised you."></textarea>
+  </div>
+
+  <div class="fillin">
+    <label for="d3-stuck">What got you stuck — and how you got past it (or where you're still stuck).</label>
+    <textarea id="d3-stuck" data-field="stuck" placeholder="Blank is fine if nothing tripped you up."></textarea>
+  </div>
+
+  <div class="fillin">
+    <label for="d3-commit">One thing you'll do with this <em>tomorrow</em>.</label>
+    <input type="text" id="d3-commit" data-field="commit" placeholder="One sentence. Keep it small.">
+  </div>
+</section>
+
+<section><h2>Try it yourself</h2><p class='help'>Pick one recurring task from your own work — a report, a spreadsheet breakdown, a summary you build every month. Create a Project for it today. Write the system prompt. Drag in whatever files you have. Ask Claude for the output you&#x27;d norma…</p></section>
+
+<section>
+  <h2>Save your work</h2>
+  <div class="actions">
+    <button class="primary" data-action="save">Save</button>
+    <button data-action="export">Export as Markdown</button>
+    <button class="danger" data-action="reset">Reset this worksheet</button>
+  </div>
+  <div class="status"></div>
+  <p class="help" style="margin-top:14px;">Saves to this browser's local storage. Export downloads a <code>.md</code> file you can commit to <code>artifact/</code>.</p>
+</section>
+
+<aside class="takeaways">
+  <h3>Key takeaways</h3>
+  <ul>
+          <li>Projects = system prompt + files + memory. Write the prompt once, shape every conversation automatically.</li>
+          <li>Drag files in instead of copy-pasting. Claude reads them directly in context.</li>
+          <li>Sonnet for most work. Flip on Extended Thinking for big reasoning or coding tasks like interactive widgets.</li>
+          <li>Artifacts aren&#x27;t just text — they&#x27;re charts, decks, interactive tools. Publish them to share a live link with your team or boss.</li>
+          <li>Chat is still Level 1. It hits a ceiling the moment work starts repeating — that&#x27;s Day 4.</li>
+  </ul>
+</aside>
+
+<nav class="day-nav">
+  <div><a href="../day-02-what-is-claude/worksheet.html">← Day 2</a></div>
+  <div><a href="../../INDEX.md">All days</a></div>
+  <div><a href="../day-04-claude-as-teammate/worksheet.html">Day 4 →</a></div>
+</nav>
+
+</div>
+<script src="../../assets/worksheet.js"></script>
+</body>
+</html>

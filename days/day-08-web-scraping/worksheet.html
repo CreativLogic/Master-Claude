@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Day 8 — Let Claude Scrape the Web for You · Claude Course</title>
+<link rel="stylesheet" href="../../assets/worksheet.css">
+</head>
+<body data-day="day-08">
+<div class="page">
+
+<header class="day-header w2">
+  <div class="day-badge">Day 8 of 28 · Week 2</div>
+  <h1>Let Claude Scrape the Web for You</h1>
+  <div class="meta">
+    Video: <code>54:00–1:04:00</code> ·
+    <a href="README.md">README</a> ·
+    <a href="lesson.md">Lesson</a> ·
+    <a href="resources.md">Resources</a> ·
+    <a href="video-section.md">Transcript</a>
+  </div>
+</header>
+
+<div class="callout">
+  <span class="label pain">Today's pain</span>
+  Some of the sites your job depends on have no Claude connector — and Claude can&#x27;t visit them raw.
+</div>
+<div class="callout">
+  <span class="label action">Today's action</span>
+  Give Claude a safe browser it can use, so it can scrape hotel prices, product listings, anything — and put it on a schedule.
+</div>
+
+<section>
+  <h2>Walk through today</h2>
+  <p class="help">Check items as you do them. Your progress auto-saves in this browser.</p>
+  <ul class="checklist">
+        <li><input type="checkbox" data-item="step-1" id="step-8-1"><label for="step-8-1">Install the Claude Chrome extension (quick option). Google &quot;Chrome Web Store,&quot; search Claude, install the extension. Log in, pin it to your toolbar. Click the icon, hit &quot;I understand&quot; through the walkthrough, and turn on Act without asking + Enable fast mode. Now Claude can drive your browser. Prompt it: &quot;Open Google Flights and Booking.com.&quot; It works, but heads up — it&#x27;s slow, eats tokens, and it&#x27;s touching your real browser with all your logged-in accounts. Not ideal for anything serious.</label></li>
+        <li><input type="checkbox" data-item="step-2" id="step-8-2"><label for="step-8-2">Or turn on Claude in Chrome as a connector. Inside Cowork, hit the plus button, go to Connectors, flip on Claude in Chrome. Same powers, wired into your Cowork project.</label></li>
+        <li><input type="checkbox" data-item="step-3" id="step-8-3"><label for="step-8-3">Understand why we&#x27;re switching to FireCrawl. Giving Claude your real browser is like handing an AI agent the keys to your car — Gmail, banking, passwords, everything. We want Claude to have its own car. FireCrawl is a sandboxed, dedicated browser that&#x27;s isolated, private, and controlled. It stays logged in to services on its own, so sessions persist without touching yours.</label></li>
+        <li><input type="checkbox" data-item="step-4" id="step-8-4"><label for="step-8-4">Sign up for FireCrawl. Go to firecrawl.dev. The free plan works for most people starting out. Grab your API key from the dashboard.</label></li>
+        <li><input type="checkbox" data-item="step-5" id="step-8-5"><label for="step-8-5">Install the FireCrawl MCP in Claude. Google &quot;FireCrawl MCP&quot; and copy the install string. Back in Claude, go to Customize, hit the plus button, pick Add custom connector, name it &quot;firecrawl,&quot; paste the install string, and paste your API key. Hit add. Flip it to always allowed so you don&#x27;t get prompted every time.</label></li>
+        <li><input type="checkbox" data-item="step-6" id="step-8-6"><label for="step-8-6">Run your first scrape. New task in Cowork, pick the right project, then prompt: &quot;Use FireCrawl to scrape hotel listings near the LA Convention Center on Booking.com for April 20th to 24th. Pull names, star ratings, room types, prices, any discounts. Organize into a clean table.&quot;</label></li>
+        <li><input type="checkbox" data-item="step-7" id="step-8-7"><label for="step-8-7">Layer scheduling on top. Switch to Opus (the request is compound). Ask: &quot;Schedule this to run every morning at 6am. Save the log as LA-Hotel-Tracker.csv in my Drive. Compare today&#x27;s price to yesterday&#x27;s — if anything drops more than $30, flag it.&quot; Now every morning, the data just shows up.</label></li>
+  </ul>
+  <div class="progress-bar"><div class="fill"></div></div>
+  <div class="help" data-progress-label style="margin-top:10px;">0 of 7 done (0%)</div>
+</section>
+
+<section>
+  <h2>Your reflection</h2>
+  <p class="help">Fill these out as you go. They save automatically — come back anytime.</p>
+
+  <div class="fillin">
+    <label for="d8-before">Before you start — what do you expect to happen today?</label>
+    <textarea id="d8-before" data-field="before" placeholder="One or two sentences."></textarea>
+  </div>
+
+  <div class="fillin">
+    <label for="d8-tried">What you actually did — paste the prompt, the output, or describe what happened.</label>
+    <textarea id="d8-tried" data-field="tried" placeholder="Paste a prompt, a result, a screenshot description, or what surprised you."></textarea>
+  </div>
+
+  <div class="fillin">
+    <label for="d8-stuck">What got you stuck — and how you got past it (or where you're still stuck).</label>
+    <textarea id="d8-stuck" data-field="stuck" placeholder="Blank is fine if nothing tripped you up."></textarea>
+  </div>
+
+  <div class="fillin">
+    <label for="d8-commit">One thing you'll do with this <em>tomorrow</em>.</label>
+    <input type="text" id="d8-commit" data-field="commit" placeholder="One sentence. Keep it small.">
+  </div>
+</section>
+
+<section><h2>Try it yourself</h2><p class='help'>Pick one website you refresh manually (a competitor&#x27;s pricing page, a jobs board, a product page). Set up FireCrawl, write one scraping prompt, and schedule it daily. Goal: never manually check that URL again.</p></section>
+
+<section>
+  <h2>Save your work</h2>
+  <div class="actions">
+    <button class="primary" data-action="save">Save</button>
+    <button data-action="export">Export as Markdown</button>
+    <button class="danger" data-action="reset">Reset this worksheet</button>
+  </div>
+  <div class="status"></div>
+  <p class="help" style="margin-top:14px;">Saves to this browser's local storage. Export downloads a <code>.md</code> file you can commit to <code>artifact/</code>.</p>
+</section>
+
+<aside class="takeaways">
+  <h3>Key takeaways</h3>
+  <ul>
+          <li>Browser-access mode (extension or Claude in Chrome connector) is fine for exploring. It&#x27;s not how you run production work — too slow, too token-heavy, too much exposure to your personal accounts.</li>
+          <li>FireCrawl gives Claude its own sandboxed browser. Isolated from your Gmail, your banking, your passwords. Sessions persist so authenticated scraping keeps working.</li>
+          <li>Adding a custom MCP connector is a 5-minute setup: install string, API key, always-allowed toggle. Same pattern works for any MCP in the ecosystem, not just FireCrawl.</li>
+          <li>For compound requests (scrape + schedule + save + compare + alert), switch to Opus. Sonnet will try and miss steps.</li>
+          <li>Once FireCrawl is wired in, Claude can read basically any public site on the internet on a schedule. That&#x27;s the last piece — now nothing on the web is off-limits.</li>
+  </ul>
+</aside>
+
+<nav class="day-nav">
+  <div><a href="../day-07-schedule-work/worksheet.html">← Day 7</a></div>
+  <div><a href="../../INDEX.md">All days</a></div>
+  <div><a href="../day-09-share-your-work/worksheet.html">Day 9 →</a></div>
+</nav>
+
+</div>
+<script src="../../assets/worksheet.js"></script>
+</body>
+</html>

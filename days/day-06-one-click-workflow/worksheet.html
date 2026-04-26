@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Day 6 — Turn Any Workflow Into a One-Click Button · Claude Course</title>
+<link rel="stylesheet" href="../../assets/worksheet.css">
+</head>
+<body data-day="day-06">
+<div class="page">
+
+<header class="day-header w1">
+  <div class="day-badge">Day 6 of 28 · Week 1</div>
+  <h1>Turn Any Workflow Into a One-Click Button</h1>
+  <div class="meta">
+    Video: <code>39:00–45:01</code> ·
+    <a href="README.md">README</a> ·
+    <a href="lesson.md">Lesson</a> ·
+    <a href="resources.md">Resources</a> ·
+    <a href="video-section.md">Transcript</a>
+  </div>
+</header>
+
+<div class="callout">
+  <span class="label pain">Today's pain</span>
+  You type the same 400-word prompt every Monday just to run your weekly report.
+</div>
+<div class="callout">
+  <span class="label action">Today's action</span>
+  Turn your recurring workflow into a Skill + slash command you can trigger with one line.
+</div>
+
+<section>
+  <h2>Walk through today</h2>
+  <p class="help">Check items as you do them. Your progress auto-saves in this browser.</p>
+  <ul class="checklist">
+        <li><input type="checkbox" data-item="step-1" id="step-6-1"><label for="step-6-1">Open the skill creator. Go to Customize inside Claude. You&#x27;ll see a few skills already pre-built — one of them is literally called &quot;skill creator.&quot; Open it and look at it. It&#x27;s a markdown file. That&#x27;s all a Skill is — a written-down process. Think of it like a recipe card. The steps, the order, the measurements, the tools it references.</label></li>
+        <li><input type="checkbox" data-item="step-2" id="step-6-2"><label for="step-6-2">Switch to Opus. This part matters. Making a skill is a logical process — it&#x27;s hard. Opus handles logical tasks way better than Sonnet. Flip the model selector to Opus before you prompt.</label></li>
+        <li><input type="checkbox" data-item="step-3" id="step-6-3"><label for="step-6-3">Write the beefy prompt. Don&#x27;t be clever, just be specific. Tell it: what to gather (Drive, HubSpot, PostHog, all the connectors from yesterday), what to process (categorize expenses by channel — paid, organic, all that), what to output (bar charts, pie charts, executive summary, agenda, PNL snapshot — same structure as the deck you just liked). End with: &quot;If I type slash weekly marketing report, I want you to run this whole thing autonomously.&quot;</label></li>
+        <li><input type="checkbox" data-item="step-4" id="step-6-4"><label for="step-6-4">Save the skill. Once Claude finishes generating, you can view the skill file (a bunch of text, don&#x27;t worry about it) and hit save.</label></li>
+        <li><input type="checkbox" data-item="step-5" id="step-6-5"><label for="step-6-5">Run it next week like Alex would. Type /weekly marketing report and hit enter. That&#x27;s it. Claude gathers from every source, processes everything, and spits out the deck — same quality as the manual run, one command.</label></li>
+        <li><input type="checkbox" data-item="step-6" id="step-6-6"><label for="step-6-6">Or just say it in plain English. You don&#x27;t even have to use the slash. Say &quot;make me a weekly marketing report&quot; and Claude will search your skills database and run it on its own.</label></li>
+  </ul>
+  <div class="progress-bar"><div class="fill"></div></div>
+  <div class="help" data-progress-label style="margin-top:10px;">0 of 6 done (0%)</div>
+</section>
+
+<section>
+  <h2>Your reflection</h2>
+  <p class="help">Fill these out as you go. They save automatically — come back anytime.</p>
+
+  <div class="fillin">
+    <label for="d6-before">Before you start — what do you expect to happen today?</label>
+    <textarea id="d6-before" data-field="before" placeholder="One or two sentences."></textarea>
+  </div>
+
+  <div class="fillin">
+    <label for="d6-tried">What you actually did — paste the prompt, the output, or describe what happened.</label>
+    <textarea id="d6-tried" data-field="tried" placeholder="Paste a prompt, a result, a screenshot description, or what surprised you."></textarea>
+  </div>
+
+  <div class="fillin">
+    <label for="d6-stuck">What got you stuck — and how you got past it (or where you're still stuck).</label>
+    <textarea id="d6-stuck" data-field="stuck" placeholder="Blank is fine if nothing tripped you up."></textarea>
+  </div>
+
+  <div class="fillin">
+    <label for="d6-commit">One thing you'll do with this <em>tomorrow</em>.</label>
+    <input type="text" id="d6-commit" data-field="commit" placeholder="One sentence. Keep it small.">
+  </div>
+</section>
+
+<section><h2>Try it yourself</h2><p class='help'>Take the prompt you used on Day 5 and turn it into a skill. Name the slash command something you&#x27;ll actually remember — `/weekly-report`, `/monday-brief`, whatever. Run it once to make sure it works.</p></section>
+
+<section>
+  <h2>Save your work</h2>
+  <div class="actions">
+    <button class="primary" data-action="save">Save</button>
+    <button data-action="export">Export as Markdown</button>
+    <button class="danger" data-action="reset">Reset this worksheet</button>
+  </div>
+  <div class="status"></div>
+  <p class="help" style="margin-top:14px;">Saves to this browser's local storage. Export downloads a <code>.md</code> file you can commit to <code>artifact/</code>.</p>
+</section>
+
+<aside class="takeaways">
+  <h3>Key takeaways</h3>
+  <ul>
+          <li>A Skill is basically a written-down process — a markdown recipe card that tells Claude: here are the steps, here&#x27;s the order, here&#x27;s what to do at each stage.</li>
+          <li>Use Opus to build skills. Logical, multi-step packaging work needs the heavier model.</li>
+          <li>Skills are the &quot;S&quot; in GCPS — Standardize. Without this step, you&#x27;re re-explaining yourself to Claude every single week.</li>
+          <li>You don&#x27;t have to memorize the slash command. Say the name in plain English and Claude will find the skill and run it.</li>
+          <li>One good skill replaces a whole process doc for your team. Share it, and everyone runs the same report the same way.</li>
+  </ul>
+</aside>
+
+<nav class="day-nav">
+  <div><a href="../day-05-connect-tools/worksheet.html">← Day 5</a></div>
+  <div><a href="../../INDEX.md">All days</a></div>
+  <div><a href="../day-07-schedule-work/worksheet.html">Day 7 →</a></div>
+</nav>
+
+</div>
+<script src="../../assets/worksheet.js"></script>
+</body>
+</html>

@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Day 14 — Let Claude Manage a Strategy While You Sleep · Claude Course</title>
+<link rel="stylesheet" href="../../assets/worksheet.css">
+</head>
+<body data-day="day-14">
+<div class="page">
+
+<header class="day-header w3">
+  <div class="day-badge">Day 14 of 28 · Week 3</div>
+  <h1>Let Claude Manage a Strategy While You Sleep</h1>
+  <div class="meta">
+    Video: <code>1:52:30–2:03:00</code> ·
+    <a href="README.md">README</a> ·
+    <a href="lesson.md">Lesson</a> ·
+    <a href="resources.md">Resources</a> ·
+    <a href="video-section.md">Transcript</a>
+  </div>
+</header>
+
+<div class="callout">
+  <span class="label pain">Today's pain</span>
+  A good options strategy stops working the minute you can&#x27;t manage it every day.
+</div>
+<div class="callout">
+  <span class="label action">Today's action</span>
+  Teach Claude your rules and let it manage the strategy while you sleep.
+</div>
+
+<section>
+  <h2>Walk through today</h2>
+  <p class="help">Check items as you do them. Your progress auto-saves in this browser.</p>
+  <ul class="checklist">
+        <li><input type="checkbox" data-item="step-1" id="step-14-1"><label for="step-14-1">Understand the wheel in one pass. You sell a cash-secured put below the current price. If it expires worthless, keep the premium and sell another. If you get assigned, you own the shares at a discount (cost basis minus the premium you already collected). Then you sell covered calls above your cost basis. If those expire worthless, keep the premium. If they get called away, you pocket the stock gains plus both premiums. Rinse, repeat.</label></li>
+        <li><input type="checkbox" data-item="step-2" id="step-14-2"><label for="step-14-2">Head back to your first paper trading Alpaca account. This is the one from earlier in the course — not the copy-trading one from Day 13. Separate accounts, separate strategies.</label></li>
+        <li><input type="checkbox" data-item="step-3" id="step-14-3"><label for="step-14-3">Paste the wheel prompt into Claude. Give it the full spec: sell a cash-secured put ~10% below current price, pick expirations 2-4 weeks out, collect premiums. If assigned, sell covered calls ~10% above your cost basis. Never sell a put unless you have cash to buy the shares. Never sell below your cost basis. Close contracts at 50% profit. Daily summary at market close. Check positions every 15 minutes during market hours. Do nothing outside market hours.</label></li>
+        <li><input type="checkbox" data-item="step-4" id="step-14-4"><label for="step-14-4">Hit enter and let it schedule itself. Claude sets up the cron jobs, starts monitoring, and logs the trades. That&#x27;s the wheel running on autopilot.</label></li>
+        <li><input type="checkbox" data-item="step-5" id="step-14-5"><label for="step-14-5">Install Claude Code in your terminal. The desktop app handles maybe 60% of what you&#x27;ll build. But for managing multiple agents and running an AI operation, the terminal is the move. Open Claude Desktop and ask: &quot;Hey, can you install the Claude Code CLI tool for me, please?&quot; Claude does it for you because it already has terminal access. Or go to Chrome, search &quot;Claude Code install,&quot; copy the install command for your OS, paste it into your terminal.</label></li>
+        <li><input type="checkbox" data-item="step-6" id="step-14-6"><label for="step-14-6">Verify. Open your terminal, type claude, hit enter. When you see the little Claude guy show up, you&#x27;re off to the races. Same Claude, just a different door into the same house.</label></li>
+  </ul>
+  <div class="progress-bar"><div class="fill"></div></div>
+  <div class="help" data-progress-label style="margin-top:10px;">0 of 6 done (0%)</div>
+</section>
+
+<section>
+  <h2>Your reflection</h2>
+  <p class="help">Fill these out as you go. They save automatically — come back anytime.</p>
+
+  <div class="fillin">
+    <label for="d14-before">Before you start — what do you expect to happen today?</label>
+    <textarea id="d14-before" data-field="before" placeholder="One or two sentences."></textarea>
+  </div>
+
+  <div class="fillin">
+    <label for="d14-tried">What you actually did — paste the prompt, the output, or describe what happened.</label>
+    <textarea id="d14-tried" data-field="tried" placeholder="Paste a prompt, a result, a screenshot description, or what surprised you."></textarea>
+  </div>
+
+  <div class="fillin">
+    <label for="d14-stuck">What got you stuck — and how you got past it (or where you're still stuck).</label>
+    <textarea id="d14-stuck" data-field="stuck" placeholder="Blank is fine if nothing tripped you up."></textarea>
+  </div>
+
+  <div class="fillin">
+    <label for="d14-commit">One thing you'll do with this <em>tomorrow</em>.</label>
+    <input type="text" id="d14-commit" data-field="commit" placeholder="One sentence. Keep it small.">
+  </div>
+</section>
+
+<section><h2>Try it yourself</h2><p class='help'>Run the wheel prompt in your first Alpaca paper account today. Then install Claude Code in your terminal so tomorrow you&#x27;re ready for the multi-interface stuff.</p></section>
+
+<section>
+  <h2>Save your work</h2>
+  <div class="actions">
+    <button class="primary" data-action="save">Save</button>
+    <button data-action="export">Export as Markdown</button>
+    <button class="danger" data-action="reset">Reset this worksheet</button>
+  </div>
+  <div class="status"></div>
+  <p class="help" style="margin-top:14px;">Saves to this browser's local storage. Export downloads a <code>.md</code> file you can commit to <code>artifact/</code>.</p>
+</section>
+
+<aside class="takeaways">
+  <h3>Key takeaways</h3>
+  <ul>
+          <li>The wheel strategy pays you in every direction — up, down, or sideways — but the management is what kills most people. Claude handles the management.</li>
+          <li>Paste a full spec into Claude: strike rules, expiration windows, profit-taking rules, schedule, market-hours-only. Then walk away.</li>
+          <li>The desktop app is one door. The terminal is another door into the same house — same projects, same CLAUDE.mds, same Claude.</li>
+          <li>Installing Claude Code in the terminal: ask the desktop app to do it for you, or run the install command from claude.com/code.</li>
+          <li>Different interfaces have different advantages. Over the next few days we&#x27;re going to walk through each door.</li>
+  </ul>
+</aside>
+
+<nav class="day-nav">
+  <div><a href="../day-13-real-time-data/worksheet.html">← Day 13</a></div>
+  <div><a href="../../INDEX.md">All days</a></div>
+  <div><a href="../day-15-all-claude-doors/worksheet.html">Day 15 →</a></div>
+</nav>
+
+</div>
+<script src="../../assets/worksheet.js"></script>
+</body>
+</html>

@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Day 27 — Edit Video With Plain English · Claude Course</title>
+<link rel="stylesheet" href="../../assets/worksheet.css">
+</head>
+<body data-day="day-27">
+<div class="page">
+
+<header class="day-header w5">
+  <div class="day-badge">Day 27 of 28 · Week 5</div>
+  <h1>Edit Video With Plain English</h1>
+  <div class="meta">
+    Video: <code>4:08:00–4:15:00</code> ·
+    <a href="README.md">README</a> ·
+    <a href="lesson.md">Lesson</a> ·
+    <a href="resources.md">Resources</a> ·
+    <a href="video-section.md">Transcript</a>
+  </div>
+</header>
+
+<div class="callout">
+  <span class="label pain">Today's pain</span>
+  One long video should become ten clips — but timelines and drag-and-drop editors take an hour per clip.
+</div>
+<div class="callout">
+  <span class="label action">Today's action</span>
+  Edit and clip your video with plain English using VibeFrame and Hyperframes, driven by Claude Code.
+</div>
+
+<section>
+  <h2>Walk through today</h2>
+  <p class="help">Check items as you do them. Your progress auto-saves in this browser.</p>
+  <ul class="checklist">
+        <li><input type="checkbox" data-item="step-1" id="step-27-1"><label for="step-27-1">Install VibeFrame. Start a new Claude Code session in a fresh folder called vibeframes. Paste the VibeFrame GitHub URL (or npm link) and say: &quot;Hey, can you set this up for me and install the MCP?&quot; Let it run.</label></li>
+        <li><input type="checkbox" data-item="step-2" id="step-27-2"><label for="step-27-2">Add your API keys. VibeFrame needs OpenAI, Anthropic, Google, and ElevenLabs keys in its env file. Everything else is optional. Drop the keys in.</label></li>
+        <li><input type="checkbox" data-item="step-3" id="step-27-3"><label for="step-27-3">Drag your long-form video into Claude. Once VibeFrame is installed, drop the video file into the Claude chat so Claude knows which video you&#x27;re talking about.</label></li>
+        <li><input type="checkbox" data-item="step-4" id="step-27-4"><label for="step-27-4">Prompt Claude to make clips. Something like: &quot;I&#x27;m trying to make highlights for this video. I want a bunch of clips that answer specific questions, clipped from this video — like how Hormozi&#x27;s highlights channel takes long videos and cuts them into shorts. Make the clips, put them in a folder, and show me.&quot; Hit go and wait.</label></li>
+        <li><input type="checkbox" data-item="step-5" id="step-27-5"><label for="step-27-5">Install Hyperframes for motion graphics. For vertical Instagram Reels with captions on the bottom and hooks on the top, start another Claude session with Hyperframes installed. Drag one clip in and say: &quot;Install Hyperframes. With Hyperframes, take this clip and make it a vertical Instagram reel. Transcribe the video and put captions on the bottom, and put a hook on top.&quot;</label></li>
+        <li><input type="checkbox" data-item="step-6" id="step-27-6"><label for="step-27-6">Review the output. Samin&#x27;s came back with the clip positioned correctly, captions at the bottom, a hook on top — usable as-is or one more iteration away from perfect.</label></li>
+        <li><input type="checkbox" data-item="step-7" id="step-27-7"><label for="step-27-7">Push to Blotato to auto-publish. Blotato (from earlier in the course) takes the finished clips and schedules them across every platform on autopilot. That&#x27;s the full pipeline: one video → Claude clips it → Hyperframes adds graphics → Blotato posts it everywhere.</label></li>
+        <li><input type="checkbox" data-item="step-8" id="step-27-8"><label for="step-27-8">Check out Clicky. Samin also shows Clicky — an open source AI companion that follows your cursor and tells you how to use any software. Paste the Clicky setup command into Claude Code, hit go, and you&#x27;ve got a co-pilot that points at buttons and explains what to click. This is a preview of where AI is going.</label></li>
+  </ul>
+  <div class="progress-bar"><div class="fill"></div></div>
+  <div class="help" data-progress-label style="margin-top:10px;">0 of 8 done (0%)</div>
+</section>
+
+<section>
+  <h2>Your reflection</h2>
+  <p class="help">Fill these out as you go. They save automatically — come back anytime.</p>
+
+  <div class="fillin">
+    <label for="d27-before">Before you start — what do you expect to happen today?</label>
+    <textarea id="d27-before" data-field="before" placeholder="One or two sentences."></textarea>
+  </div>
+
+  <div class="fillin">
+    <label for="d27-tried">What you actually did — paste the prompt, the output, or describe what happened.</label>
+    <textarea id="d27-tried" data-field="tried" placeholder="Paste a prompt, a result, a screenshot description, or what surprised you."></textarea>
+  </div>
+
+  <div class="fillin">
+    <label for="d27-stuck">What got you stuck — and how you got past it (or where you're still stuck).</label>
+    <textarea id="d27-stuck" data-field="stuck" placeholder="Blank is fine if nothing tripped you up."></textarea>
+  </div>
+
+  <div class="fillin">
+    <label for="d27-commit">One thing you'll do with this <em>tomorrow</em>.</label>
+    <input type="text" id="d27-commit" data-field="commit" placeholder="One sentence. Keep it small.">
+  </div>
+</section>
+
+<section><h2>Try it yourself</h2><p class='help'>Pick one long-form video you already shot — even a Zoom recording. Run VibeFrame on it tonight. Get three clips out of it. Don&#x27;t publish them. Just see the pipeline work.</p></section>
+
+<section>
+  <h2>Save your work</h2>
+  <div class="actions">
+    <button class="primary" data-action="save">Save</button>
+    <button data-action="export">Export as Markdown</button>
+    <button class="danger" data-action="reset">Reset this worksheet</button>
+  </div>
+  <div class="status"></div>
+  <p class="help" style="margin-top:14px;">Saves to this browser's local storage. Export downloads a <code>.md</code> file you can commit to <code>artifact/</code>.</p>
+</section>
+
+<aside class="takeaways">
+  <h3>Key takeaways</h3>
+  <ul>
+          <li>You don&#x27;t need a video editor anymore. Claude + VibeFrame + Hyperframes does it in plain English.</li>
+          <li>Open source is where the real innovation is. Samin&#x27;s whole editing stack is open source — the Frontier labs just copy it into their products later.</li>
+          <li>One long video is raw material for ten short ones. Clip it, stylize it, schedule it.</li>
+          <li>Clicky is a preview of the future: an LLM that follows your cursor and teaches you any software in real time.</li>
+          <li>The skill is wiring tools together. The tools will change — the pattern won&#x27;t.</li>
+  </ul>
+</aside>
+
+<nav class="day-nav">
+  <div><a href="../day-26-video-clone/worksheet.html">← Day 26</a></div>
+  <div><a href="../../INDEX.md">All days</a></div>
+  <div><a href="../day-28-whats-next/worksheet.html">Day 28 →</a></div>
+</nav>
+
+</div>
+<script src="../../assets/worksheet.js"></script>
+</body>
+</html>

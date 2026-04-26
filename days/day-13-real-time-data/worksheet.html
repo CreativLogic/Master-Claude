@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Day 13 — Give Claude Eyes on Your Data · Claude Course</title>
+<link rel="stylesheet" href="../../assets/worksheet.css">
+</head>
+<body data-day="day-13">
+<div class="page">
+
+<header class="day-header w3">
+  <div class="day-badge">Day 13 of 28 · Week 3</div>
+  <h1>Give Claude Eyes on Your Data</h1>
+  <div class="meta">
+    Video: <code>1:42:30–1:52:30</code> ·
+    <a href="README.md">README</a> ·
+    <a href="lesson.md">Lesson</a> ·
+    <a href="resources.md">Resources</a> ·
+    <a href="video-section.md">Transcript</a>
+  </div>
+</header>
+
+<div class="callout">
+  <span class="label pain">Today's pain</span>
+  Your automations run blind — no real signal, just gut feeling baked into prompts.
+</div>
+<div class="callout">
+  <span class="label action">Today's action</span>
+  Wire Claude into a real-time data feed so it can make decisions on actual signals.
+</div>
+
+<section>
+  <h2>Walk through today</h2>
+  <p class="help">Check items as you do them. Your progress auto-saves in this browser.</p>
+  <ul class="checklist">
+        <li><input type="checkbox" data-item="step-1" id="step-13-1"><label for="step-13-1">Pick a new paper trading account for this strategy. In your Alpaca dashboard, hop into a separate paper account so this copy-trading bot stays organized and doesn&#x27;t mix with the other strategies you&#x27;re running. Hit Generate Keys, copy the API credentials.</label></li>
+        <li><input type="checkbox" data-item="step-2" id="step-13-2"><label for="step-13-2">Open a fresh Claude Code session. Start a new session so this bot lives on its own wall. Paste the Alpaca keys in.</label></li>
+        <li><input type="checkbox" data-item="step-3" id="step-13-3"><label for="step-13-3">Grab the data source — Capital Trades. Google &quot;CapitalTrades,&quot; open it up. It&#x27;s a free service that tracks US politicians&#x27; stock trades (they&#x27;re legally required to disclose). Copy the URL.</label></li>
+        <li><input type="checkbox" data-item="step-4" id="step-13-4"><label for="step-13-4">Drop this prompt into Claude. Paste the Capital Trades URL and tell Claude: &quot;I&#x27;m trying to set up a copy trading bot. You&#x27;ve got access to my Alpaca account. Make a new folder inside this folder. Find a politician with really good recent success who&#x27;s actively trading. Copy their trades. Set up the cron jobs and schedules so you&#x27;re always checking Capital Trades and copying what they do. Buy and sell the same options they do.&quot;</label></li>
+        <li><input type="checkbox" data-item="step-5" id="step-13-5"><label for="step-13-5">Hit bypass permissions, then enter. Let Claude work. Go make a coffee. When it finishes it&#x27;ll have picked a politician (Michael McCaul in Samin&#x27;s run), set a recurring schedule to check for new trades, and wired everything up against Alpaca.</label></li>
+        <li><input type="checkbox" data-item="step-6" id="step-13-6"><label for="step-13-6">Ask Claude who it picked and why. Follow up with &quot;who are you copy trading and why?&quot; so you know which politician the algorithm chose and its reasoning.</label></li>
+  </ul>
+  <div class="progress-bar"><div class="fill"></div></div>
+  <div class="help" data-progress-label style="margin-top:10px;">0 of 6 done (0%)</div>
+</section>
+
+<section>
+  <h2>Your reflection</h2>
+  <p class="help">Fill these out as you go. They save automatically — come back anytime.</p>
+
+  <div class="fillin">
+    <label for="d13-before">Before you start — what do you expect to happen today?</label>
+    <textarea id="d13-before" data-field="before" placeholder="One or two sentences."></textarea>
+  </div>
+
+  <div class="fillin">
+    <label for="d13-tried">What you actually did — paste the prompt, the output, or describe what happened.</label>
+    <textarea id="d13-tried" data-field="tried" placeholder="Paste a prompt, a result, a screenshot description, or what surprised you."></textarea>
+  </div>
+
+  <div class="fillin">
+    <label for="d13-stuck">What got you stuck — and how you got past it (or where you're still stuck).</label>
+    <textarea id="d13-stuck" data-field="stuck" placeholder="Blank is fine if nothing tripped you up."></textarea>
+  </div>
+
+  <div class="fillin">
+    <label for="d13-commit">One thing you'll do with this <em>tomorrow</em>.</label>
+    <input type="text" id="d13-commit" data-field="commit" placeholder="One sentence. Keep it small.">
+  </div>
+</section>
+
+<section><h2>Try it yourself</h2><p class='help'>Set this bot up in a Alpaca paper account today. Let it run for a week. Check back in and see what it traded.</p></section>
+
+<section>
+  <h2>Save your work</h2>
+  <div class="actions">
+    <button class="primary" data-action="save">Save</button>
+    <button data-action="export">Export as Markdown</button>
+    <button class="danger" data-action="reset">Reset this worksheet</button>
+  </div>
+  <div class="status"></div>
+  <p class="help" style="margin-top:14px;">Saves to this browser's local storage. Export downloads a <code>.md</code> file you can commit to <code>artifact/</code>.</p>
+</section>
+
+<aside class="takeaways">
+  <h3>Key takeaways</h3>
+  <ul>
+          <li>Claude on its own can&#x27;t scour the internet for real-time data — you have to plug it into services that already collect and organize it.</li>
+          <li>Congressional trade data is public, free, and most of them beat the market. Capital Trades surfaces it.</li>
+          <li>Backdated one year, copying McCaul on a $50k account would&#x27;ve produced ~34.8% vs. ~15% for buy-and-hold S&amp;P 500.</li>
+          <li>The MCP / skill is the plug. Data flows through the service, Claude draws from it whenever it needs to, and it becomes a new ability you can use.</li>
+          <li>Separate paper accounts per strategy — so you can actually track what&#x27;s working.</li>
+  </ul>
+</aside>
+
+<nav class="day-nav">
+  <div><a href="../day-12-what-to-automate/worksheet.html">← Day 12</a></div>
+  <div><a href="../../INDEX.md">All days</a></div>
+  <div><a href="../day-14-overnight-strategy/worksheet.html">Day 14 →</a></div>
+</nav>
+
+</div>
+<script src="../../assets/worksheet.js"></script>
+</body>
+</html>

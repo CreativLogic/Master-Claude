@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Day 12 — Pick the Right Thing to Automate · Claude Course</title>
+<link rel="stylesheet" href="../../assets/worksheet.css">
+</head>
+<body data-day="day-12">
+<div class="page">
+
+<header class="day-header w2">
+  <div class="day-badge">Day 12 of 28 · Week 2</div>
+  <h1>Pick the Right Thing to Automate</h1>
+  <div class="meta">
+    Video: <code>1:33:42–1:42:30</code> ·
+    <a href="README.md">README</a> ·
+    <a href="lesson.md">Lesson</a> ·
+    <a href="resources.md">Resources</a> ·
+    <a href="video-section.md">Transcript</a>
+  </div>
+</header>
+
+<div class="callout">
+  <span class="label pain">Today's pain</span>
+  You&#x27;re trying to automate everything at once and getting nowhere.
+</div>
+<div class="callout">
+  <span class="label action">Today's action</span>
+  Use the Automation Priority Matrix to pick ONE high-leverage workflow and start there.
+</div>
+
+<section>
+  <h2>Walk through today</h2>
+  <p class="help">Check items as you do them. Your progress auto-saves in this browser.</p>
+  <ul class="checklist">
+        <li><input type="checkbox" data-item="step-1" id="step-12-1"><label for="step-12-1">Understand why rules are the whole point. Claude isn&#x27;t here to &quot;figure out trading.&quot; Think of it like a smart thermostat. Once you set the rules — drops below 68, heat kicks on; above 75, AC kicks on — the thermostat handles it all day while you stop fiddling with your phone. Trading works the same way. You encode the rules once. Claude executes thousands of decisions a day at a speed and discipline you could never match manually.</label></li>
+        <li><input type="checkbox" data-item="step-2" id="step-12-2"><label for="step-12-2">Learn the trailing stop strategy (the example). You buy a stock at $100. Set a floor: if it drops to $95, sell. That&#x27;s your max risk — $5. Now if the stock climbs to $110, you want to move the floor up to $105 so you&#x27;re locking in profit. If it dips and hits $105, you still walk away up $5. If it keeps climbing to $115, floor moves to $110. You can never fall back to where you started. That&#x27;s the trailing stop. You set the rules once, Claude follows them every second.</label></li>
+        <li><input type="checkbox" data-item="step-3" id="step-12-3"><label for="step-12-3">Word-vomit the strategy to Claude. Back in your Trading folder in Claude Code (from Day 11), tell Claude:</label></li>
+        <li><input type="checkbox" data-item="step-4" id="step-12-4"><label for="step-12-4">Verify in Alpaca. When Claude&#x27;s done, open Alpaca&#x27;s dashboard. You should see Tesla bought, and a stop-loss sitting at the floor price. If both are there, your rules are live.</label></li>
+        <li><input type="checkbox" data-item="step-5" id="step-12-5"><label for="step-12-5">Put Claude on a schedule so it keeps checking. One trade isn&#x27;t enough — the floor needs to move up as the price climbs. Tell Claude:</label></li>
+        <li><input type="checkbox" data-item="step-6" id="step-12-6"><label for="step-12-6">Role-play scenarios to pressure-test the rules. Ask Claude: &quot;Briefly, what would you do if Tesla shoots up to $500 randomly?&quot; It&#x27;ll walk you through exactly what the trailing stop does on the way up. Do this for a few edge cases before trusting it with bigger positions. If the logic&#x27;s wrong, just say &quot;change this around&quot; and it rewrites the rules.</label></li>
+        <li><input type="checkbox" data-item="step-7" id="step-12-7"><label for="step-12-7">Add the layers you missed. Samin realized ladder buys weren&#x27;t triggering yet, so he said: &quot;Think about what are good ladder buys, set them up in the schedule, and update the strategy in our whole plan.&quot; Claude came back with levels — at −15% buy 10%, at −50% buy 50%. Iterate until the rules match the way you&#x27;d actually think about it.</label></li>
+  </ul>
+  <div class="progress-bar"><div class="fill"></div></div>
+  <div class="help" data-progress-label style="margin-top:10px;">0 of 7 done (0%)</div>
+</section>
+
+<section>
+  <h2>Your reflection</h2>
+  <p class="help">Fill these out as you go. They save automatically — come back anytime.</p>
+
+  <div class="fillin">
+    <label for="d12-before">Before you start — what do you expect to happen today?</label>
+    <textarea id="d12-before" data-field="before" placeholder="One or two sentences."></textarea>
+  </div>
+
+  <div class="fillin">
+    <label for="d12-tried">What you actually did — paste the prompt, the output, or describe what happened.</label>
+    <textarea id="d12-tried" data-field="tried" placeholder="Paste a prompt, a result, a screenshot description, or what surprised you."></textarea>
+  </div>
+
+  <div class="fillin">
+    <label for="d12-stuck">What got you stuck — and how you got past it (or where you're still stuck).</label>
+    <textarea id="d12-stuck" data-field="stuck" placeholder="Blank is fine if nothing tripped you up."></textarea>
+  </div>
+
+  <div class="fillin">
+    <label for="d12-commit">One thing you'll do with this <em>tomorrow</em>.</label>
+    <input type="text" id="d12-commit" data-field="commit" placeholder="One sentence. Keep it small.">
+  </div>
+</section>
+
+<section><h2>Try it yourself</h2><p class='help'>Pick one rule-based decision in your life — stock, outreach cadence, content reposting, review triage — and write the rules in English like you would for a new hire. Paste it into Claude Code inside a dedicated project folder. Role-play th…</p></section>
+
+<section>
+  <h2>Save your work</h2>
+  <div class="actions">
+    <button class="primary" data-action="save">Save</button>
+    <button data-action="export">Export as Markdown</button>
+    <button class="danger" data-action="reset">Reset this worksheet</button>
+  </div>
+  <div class="status"></div>
+  <p class="help" style="margin-top:14px;">Saves to this browser's local storage. Export downloads a <code>.md</code> file you can commit to <code>artifact/</code>.</p>
+</section>
+
+<aside class="takeaways">
+  <h3>Key takeaways</h3>
+  <ul>
+          <li>The best things to automate are rule-based decisions you already make manually.</li>
+          <li>Claude executes rules at a speed and discipline you can&#x27;t match. You encode the rules. It runs them.</li>
+          <li>Trailing stop is the worked example — floor only goes up, never down. Same shape applies to any &quot;if X, then Y&quot; decision.</li>
+          <li>Use /schedule (or just tell Claude to use it) so the bot keeps checking on its own. Check the clock icon to see local tasks running.</li>
+          <li>Role-play scenarios before going live. &quot;What would you do if X happens?&quot; is the cheapest test you can run.</li>
+  </ul>
+</aside>
+
+<nav class="day-nav">
+  <div><a href="../day-11-first-pipeline/worksheet.html">← Day 11</a></div>
+  <div><a href="../../INDEX.md">All days</a></div>
+  <div><a href="../day-13-real-time-data/worksheet.html">Day 13 →</a></div>
+</nav>
+
+</div>
+<script src="../../assets/worksheet.js"></script>
+</body>
+</html>

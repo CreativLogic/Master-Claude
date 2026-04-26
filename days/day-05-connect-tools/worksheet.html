@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Day 5 — Connect Claude to Your Email and Drive · Claude Course</title>
+<link rel="stylesheet" href="../../assets/worksheet.css">
+</head>
+<body data-day="day-05">
+<div class="page">
+
+<header class="day-header w1">
+  <div class="day-badge">Day 5 of 28 · Week 1</div>
+  <h1>Connect Claude to Your Email and Drive</h1>
+  <div class="meta">
+    Video: <code>32:00–39:00</code> ·
+    <a href="README.md">README</a> ·
+    <a href="lesson.md">Lesson</a> ·
+    <a href="resources.md">Resources</a> ·
+    <a href="video-section.md">Transcript</a>
+  </div>
+</header>
+
+<div class="callout">
+  <span class="label pain">Today's pain</span>
+  Claude can&#x27;t touch your Gmail, Drive, or calendar — so you&#x27;re still copy-pasting context in.
+</div>
+<div class="callout">
+  <span class="label action">Today's action</span>
+  Connect Gmail, Google Drive, and one more tool using the built-in connectors.
+</div>
+
+<section>
+  <h2>Walk through today</h2>
+  <p class="help">Check items as you do them. Your progress auto-saves in this browser.</p>
+  <ul class="checklist">
+        <li><input type="checkbox" data-item="step-1" id="step-5-1"><label for="step-5-1">Hit the plus button and open connectors. Inside Cowork (make sure your project is selected), click the plus icon and go to connectors. You&#x27;ll see a list — HubSpot, Google Drive, Post Hog, Gmail, all that stuff. Flip on the ones you actually use. For the demo we&#x27;ve got Google Drive, HubSpot, and Post Hog turned on.</label></li>
+        <li><input type="checkbox" data-item="step-2" id="step-5-2"><label for="step-5-2">Tell Claude where your stuff lives — in plain English. Don&#x27;t overthink the prompt. Something like: &quot;Every week my team dumps expense receipts and invoices into our finance folder in Google Drive. Ad platform reports are in marketing. Post Hog has our website analytics. Everything else is in HubSpot.&quot; You&#x27;re giving it the map, not writing a technical spec.</label></li>
+        <li><input type="checkbox" data-item="step-3" id="step-5-3"><label for="step-5-3">Ask it to pull what it needs. Same prompt, add the ask at the end: &quot;I need to build the same PNL charts, revenue vs expenses, channel performance breakdown. Can you pull everything you need to do that for me?&quot; Hit let&#x27;s go.</label></li>
+        <li><input type="checkbox" data-item="step-4" id="step-5-4"><label for="step-5-4">Watch the progress pane and steer mid-run. Cowork splits into three things — a progress plan, working folders, and the files it&#x27;s touching. This is where you can actually cue up a message mid-run, like &quot;only work from the last week folder&quot; — you can&#x27;t do that in Chat.</label></li>
+        <li><input type="checkbox" data-item="step-5" id="step-5-5"><label for="step-5-5">Check the file list when it&#x27;s done. Open the deck it made. Scroll through. The first pass probably won&#x27;t nail your style — that&#x27;s fine. This is the reality of working with AI.</label></li>
+        <li><input type="checkbox" data-item="step-6" id="step-5-6"><label for="step-5-6">Iterate until it looks right. Paste in a link to the old deck you liked and say &quot;make sure the output follows the same structure, agenda, and slide order.&quot; Go back and forth until it&#x27;s solid. Don&#x27;t be precious about it.</label></li>
+  </ul>
+  <div class="progress-bar"><div class="fill"></div></div>
+  <div class="help" data-progress-label style="margin-top:10px;">0 of 6 done (0%)</div>
+</section>
+
+<section>
+  <h2>Your reflection</h2>
+  <p class="help">Fill these out as you go. They save automatically — come back anytime.</p>
+
+  <div class="fillin">
+    <label for="d5-before">Before you start — what do you expect to happen today?</label>
+    <textarea id="d5-before" data-field="before" placeholder="One or two sentences."></textarea>
+  </div>
+
+  <div class="fillin">
+    <label for="d5-tried">What you actually did — paste the prompt, the output, or describe what happened.</label>
+    <textarea id="d5-tried" data-field="tried" placeholder="Paste a prompt, a result, a screenshot description, or what surprised you."></textarea>
+  </div>
+
+  <div class="fillin">
+    <label for="d5-stuck">What got you stuck — and how you got past it (or where you're still stuck).</label>
+    <textarea id="d5-stuck" data-field="stuck" placeholder="Blank is fine if nothing tripped you up."></textarea>
+  </div>
+
+  <div class="fillin">
+    <label for="d5-commit">One thing you'll do with this <em>tomorrow</em>.</label>
+    <input type="text" id="d5-commit" data-field="commit" placeholder="One sentence. Keep it small.">
+  </div>
+</section>
+
+<section><h2>Try it yourself</h2><p class='help'>Pick one repeating task that lives across two apps (Gmail + Drive is a good first one). Turn on both connectors, write one plain-English prompt that tells Claude where the data is and what you want, and let it run end-to-end once.</p></section>
+
+<section>
+  <h2>Save your work</h2>
+  <div class="actions">
+    <button class="primary" data-action="save">Save</button>
+    <button data-action="export">Export as Markdown</button>
+    <button class="danger" data-action="reset">Reset this worksheet</button>
+  </div>
+  <div class="status"></div>
+  <p class="help" style="margin-top:14px;">Saves to this browser's local storage. Export downloads a <code>.md</code> file you can commit to <code>artifact/</code>.</p>
+</section>
+
+<aside class="takeaways">
+  <h3>Key takeaways</h3>
+  <ul>
+          <li>Connectors are Claude&#x27;s hands — without them it&#x27;s just talking, not working.</li>
+          <li>The &quot;G&quot; in GCPS is Gather. Before Claude can process anything, it needs the raw inputs pulled from the right places.</li>
+          <li>Cowork lets you steer mid-run. Chat doesn&#x27;t. For professional work, default to Cowork.</li>
+          <li>Your first prompt is a starting point, not a final answer. Going back and forth is the job, not a failure.</li>
+          <li>Always paste a reference to the output style you want. &quot;Make it look like this&quot; beats &quot;make it look nice.&quot;</li>
+  </ul>
+</aside>
+
+<nav class="day-nav">
+  <div><a href="../day-04-claude-as-teammate/worksheet.html">← Day 4</a></div>
+  <div><a href="../../INDEX.md">All days</a></div>
+  <div><a href="../day-06-one-click-workflow/worksheet.html">Day 6 →</a></div>
+</nav>
+
+</div>
+<script src="../../assets/worksheet.js"></script>
+</body>
+</html>
