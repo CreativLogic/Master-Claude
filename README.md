@@ -1,11 +1,12 @@
-# Claude Course — 28 Days, One Conversation
+# Master Claude — The Course.
+## — 28 Days. One Conversation
 
 This repo IS the course. You don't read it. You **talk to it.**
 
 Paste this URL into Claude Code and ask it anything:
 
 ```
-https://github.com/Samin12/claude-course
+https://github.com/CreativLogic/Master-Claude
 ```
 
 Claude Code clones it, loads the tutor, and you start a conversation. That's the whole UX.
@@ -16,7 +17,7 @@ Claude Code clones it, loads the tutor, and you start a conversation. That's the
 
 Open Claude Code (terminal, desktop, or VS Code) and say:
 
-> Hey, can you clone https://github.com/Samin12/claude-course and walk me through it.
+> Hey, can you clone (https://github.com/CreativLogic/Master-Claude) and walk me through it.
 
 Claude pulls the repo, reads the [CLAUDE.md](CLAUDE.md) tutor file, and you can immediately ask things like:
 
@@ -91,8 +92,8 @@ Full day-by-day map: [INDEX.md](INDEX.md). Every tool, link, and skill in one li
 ## Want to clone it manually?
 
 ```bash
-git clone https://github.com/Samin12/claude-course
-cd claude-course
+git clone https://github.com/CreativLogic/Master-Claude
+cd Master-Claude
 claude
 ```
 
